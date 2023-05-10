@@ -1,0 +1,38 @@
+.ProductDetails-div {
+  font-family: poppins;
+  .productName {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0px;
+    font-weight: 600;
+    i {
+      color: green;
+    }
+  }
+  .ProductDetails-price {
+    font-size: 16px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+
+  .likeShare {
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    button {
+      display: flex;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+      padding: 8px;
+      border-radius: 50px;
+      color: #e66158;
+      background-color: white;
+      box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.395);
+    }
+  }
+}

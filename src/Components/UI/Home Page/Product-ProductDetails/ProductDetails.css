@@ -1,0 +1,37 @@
+.ProductDetails-div {
+  font-family: poppins;
+}
+.ProductDetails-div .productName {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0px;
+  font-weight: 600;
+}
+.ProductDetails-div .productName i {
+  color: green;
+}
+.ProductDetails-div .ProductDetails-price {
+  font-size: 16px;
+}
+.ProductDetails-div .desc {
+  font-size: 12px;
+}
+.ProductDetails-div .likeShare {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+}
+.ProductDetails-div .likeShare button {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  padding: 8px;
+  border-radius: 50px;
+  color: #e66158;
+  background-color: white;
+  box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.395);
+}/*# sourceMappingURL=ProductDetails.css.map */

@@ -1,0 +1,21 @@
+.ProductPhoto-div {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  width: 110px;
+  font-family: poppins;
+  margin-top: 5px;
+}
+.ProductPhoto-div .ProductPhoto-div-img {
+  border-radius: 10px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProductPhoto-div .ProductPhoto-div-img img {
+  border-radius: 10px;
+  height: 110px;
+  width: 110px;
+  object-fit: cover;
+}/*# sourceMappingURL=ProductPhoto.css.map */

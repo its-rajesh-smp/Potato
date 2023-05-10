@@ -1,0 +1,25 @@
+.Offer-div {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 70px;
+  width: 150px;
+  background-color: #ffffff;
+  border: 1px dashed black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 5px;
+  font-family: poppins;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.Offer-div .promo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.AppliedOffer {
+  background-color: aquamarine;
+}/*# sourceMappingURL=Offer.css.map */

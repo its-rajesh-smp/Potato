@@ -1,0 +1,19 @@
+.ProductPhotoBtn-div-button {
+  display: flex;
+  background-color: #e66158;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  button {
+    background-color: #e66158;
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  p {
+    padding: 5px;
+    color: #ffffff;
+  }
+}

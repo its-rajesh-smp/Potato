@@ -1,0 +1,27 @@
+.SelectedCurrentLocation-div {
+  height: 46px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px;
+  box-shadow: 1px 1px 3px black;
+  font-family: poppins;
+  font-size: 16px;
+  color: #e66158;
+  font-weight: 600;
+  .SelectedCurrentLocation-div-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .SelectedCurrentLocation-div-ASAP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+}

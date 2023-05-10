@@ -1,0 +1,45 @@
+.GoToCart-div {
+  position: sticky;
+  height: 55px;
+  bottom: 20px;
+  width: 100%;
+}
+
+.GoToCart-div-button {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #e66158;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.GoToCart-div-button-CartPrice {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 16px;
+  .moneyType {
+    font-size: 11px;
+  }
+  .price {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .taxes {
+    font-size: 12px;
+  }
+}
+
+.GoToCart-div-button-ViewCart {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}

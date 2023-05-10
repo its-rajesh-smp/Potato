@@ -1,0 +1,54 @@
+.OrderSuccessPage-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aquamarine;
+  font-family: poppins;
+  flex-direction: column;
+}
+.OrderSuccessPage-div h1 {
+  position: relative;
+  top: 0px;
+  animation-name: jump;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  transition-property: top;
+  transition-duration: 2s;
+}
+.OrderSuccessPage-div p {
+  font-size: 12px;
+}
+
+@keyframes jump {
+  10% {
+    top: -150px;
+  }
+  20% {
+    top: 0px;
+  }
+  30% {
+    top: -100px;
+  }
+  40% {
+    top: 0px;
+  }
+  50% {
+    top: -50px;
+  }
+  60% {
+    top: 0px;
+  }
+  70% {
+    top: -40px;
+  }
+  80% {
+    top: 0px;
+  }
+  90% {
+    top: -25px;
+  }
+  100% {
+    top: 0px;
+  }
+}/*# sourceMappingURL=OrderSuccessPage.css.map */

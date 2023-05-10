@@ -1,0 +1,35 @@
+.CartItem-div{
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins;
+    margin-bottom: 10px;
+    .CartItem-div-item{
+        height: min-content;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        i{
+            color: green;
+        }
+    }
+    .CartItem-div-item-price{
+        font-size: 12px;
+        text-align: end;
+        line-height: 20px;
+        font-weight: 600;
+        .CartItem-div-item-quantity{
+            padding: 2px 30px;
+            border: 1px solid #e66158;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            
+        }
+        .original{
+            text-decoration:line-through;
+        }
+        .discount{
+            color: green;
+        }
+
+    }
+}

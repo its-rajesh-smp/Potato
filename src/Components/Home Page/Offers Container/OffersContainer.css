@@ -1,0 +1,27 @@
+.OffersContainer-div {
+  height: 150px;
+  background-color: white;
+  border: 1px solid gray;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.OffersContainer-div h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  font-family: poppins;
+}
+.OffersContainer-div h3 i {
+  font-size: 22px;
+  color: #f4884f;
+}
+
+.OffersContainer-div::-webkit-scrollbar {
+  display: none;
+}
+
+.my-offers-div {
+  display: inline-flex;
+  margin: 0px 10px;
+}/*# sourceMappingURL=OffersContainer.css.map */

@@ -1,0 +1,29 @@
+.CartOffersAndCoupons-div {
+  font-family: poppins;
+  padding: 20px 0px;
+  border-bottom: 1px solid #939393;
+}
+.CartOffersAndCoupons-div .CartOffersAndCoupons-div-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  color: gray;
+}
+.CartOffersAndCoupons-div .CartOffersAndCoupons-div-head i {
+  font-size: 25px;
+  color: #f3681f;
+}
+.CartOffersAndCoupons-div .CartOffersAndCoupons-div-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CartOffersAndCoupons-div .CartOffersAndCoupons-div-foot p {
+  margin-left: 20px;
+  font-size: 12px;
+}
+.CartOffersAndCoupons-div .CartOffersAndCoupons-div-foot i {
+  font-size: 20px;
+  color: #f3681f;
+}/*# sourceMappingURL=CartOffersAndCoupons.css.map */

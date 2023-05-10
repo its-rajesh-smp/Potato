@@ -1,0 +1,23 @@
+.BillDetails-div {
+  font-family: poppins;
+  padding: 20px 0px;
+  border-bottom: 1px solid #939393;
+  h3 {
+    padding-bottom: 10px;
+    color: gray;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    span {
+      font-weight: 600;
+    }
+  }
+  .total {
+    font-weight: 600;
+    .totalAmount {
+      font-size: 22px;
+    }
+  }
+}
