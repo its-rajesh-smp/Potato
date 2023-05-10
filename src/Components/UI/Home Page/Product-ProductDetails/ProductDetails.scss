@@ -1,35 +1,44 @@
+@import "../../../../Styles/color";
 .ProductDetails-div {
   font-family: poppins;
   .productName {
-    font-size: 22px;
+    font-size: torem(22px);
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 5px 0px;
+    gap: torem(5px);
+    padding: torem(5px) 0px;
     font-weight: 600;
     i {
       color: green;
     }
   }
   .ProductDetails-price {
-    font-size: 16px;
+    font-size: torem(16px);
+    padding-left: torem(5px);
   }
   .desc {
-    font-size: 12px;
+    padding-left: torem(5px);
+    font-size: torem(12px);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
   }
 
   .likeShare {
-    margin-top: 10px;
-    margin-left: 5px;
+    padding-left: torem(5px);
+    margin-top: torem(10px);
+    margin-left: torem(5px);
     display: flex;
     button {
       display: flex;
       border: none;
       justify-content: center;
       align-items: center;
-      margin-right: 15px;
-      padding: 8px;
-      border-radius: 50px;
+      margin-right: torem(15px);
+      padding: torem(8px);
+      border-radius: torem(50px);
       color: #e66158;
       background-color: white;
       box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.395);

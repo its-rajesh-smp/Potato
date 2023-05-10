@@ -1,19 +1,18 @@
 .GoToCart-div {
-  position: sticky;
-  height: 55px;
-  bottom: 20px;
-  width: 100%;
+  bottom: 0.625rem;
+  position: fixed;
+  height: 5rem;
 }
 
 .GoToCart-div-button {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  padding: 25px;
+  padding: 1.5625rem;
   border: none;
   cursor: pointer;
   background-color: #e66158;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,17 +24,21 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  line-height: 16px;
+  line-height: 1rem;
+}
+.GoToCart-div-button-CartPrice .viewCart {
+  font-size: 1rem;
 }
 .GoToCart-div-button-CartPrice .moneyType {
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 .GoToCart-div-button-CartPrice .price {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
 }
-.GoToCart-div-button-CartPrice .taxes {
-  font-size: 12px;
+.GoToCart-div-button-CartPrice .taxes,
+.GoToCart-div-button-CartPrice .totalItem {
+  font-size: 0.75rem;
 }
 
 .GoToCart-div-button-ViewCart {

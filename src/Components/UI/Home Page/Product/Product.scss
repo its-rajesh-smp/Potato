@@ -1,6 +1,8 @@
+@import "../../../../Styles/color";
 .Product-div {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: torem(10px);
   background-color: white;
+  padding: torem(10px);
 }

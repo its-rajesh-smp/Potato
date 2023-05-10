@@ -2,25 +2,33 @@
   font-family: poppins;
 }
 .ProductDetails-div .productName {
-  font-size: 22px;
+  font-size: 1.375rem;
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 5px 0px;
+  gap: 0.3125rem;
+  padding: 0.3125rem 0px;
   font-weight: 600;
 }
 .ProductDetails-div .productName i {
   color: green;
 }
 .ProductDetails-div .ProductDetails-price {
-  font-size: 16px;
+  font-size: 1rem;
+  padding-left: 0.3125rem;
 }
 .ProductDetails-div .desc {
-  font-size: 12px;
+  padding-left: 0.3125rem;
+  font-size: 0.75rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 .ProductDetails-div .likeShare {
-  margin-top: 10px;
-  margin-left: 5px;
+  padding-left: 0.3125rem;
+  margin-top: 0.625rem;
+  margin-left: 0.3125rem;
   display: flex;
 }
 .ProductDetails-div .likeShare button {
@@ -28,9 +36,9 @@
   border: none;
   justify-content: center;
   align-items: center;
-  margin-right: 15px;
-  padding: 8px;
-  border-radius: 50px;
+  margin-right: 0.9375rem;
+  padding: 0.5rem;
+  border-radius: 3.125rem;
   color: #e66158;
   background-color: white;
   box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.395);

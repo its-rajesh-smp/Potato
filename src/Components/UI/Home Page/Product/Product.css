@@ -1,6 +1,7 @@
 .Product-div {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0.625rem;
   background-color: white;
+  padding: 0.625rem;
 }/*# sourceMappingURL=Product.css.map */

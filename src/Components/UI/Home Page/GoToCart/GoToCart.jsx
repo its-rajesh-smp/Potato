@@ -1,13 +1,13 @@
-import React from 'react';
-import "./GoToCart.css"
+import React from "react";
+import "./GoToCart.css";
 
 function GoToCart(props) {
   return (
-    <div className=' GoToCart-div '>
+    <div className=" GoToCart-div App-div ">
       <button className="GoToCart-div-button">
         <div className="GoToCart-div-button-CartPrice">
           <p>
-            <span>{0}</span> Item
+            <span className="totalItem">{0}</span> Item
           </p>
           <p>
             <span className="moneyType">₹</span>
@@ -17,7 +17,7 @@ function GoToCart(props) {
         </div>
 
         <div className="GoToCart-div-button-ViewCart">
-          <p>VIEW CART</p>
+          <p className="viewCart">VIEW CART</p>
           <i className="bx bxs-right-arrow"></i>
         </div>
       </button>

@@ -1,8 +1,11 @@
+@import "../../../../Styles/color";
 .flipswitch {
   color: gray;
-  height: 55px;
+  height: torem(55px);
   background-color: white;
-  padding-left: 20px;
+  padding-left: torem(20px);
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid gray;
 }

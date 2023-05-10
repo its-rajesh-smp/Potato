@@ -1,21 +1,21 @@
+@import "../../../../Styles/color";
 .ProductPhoto-div {
   display: flex;
   flex-direction: column;
-  height: 110px;
-  width: 110px;
+  height: torem(110px);
+  width: torem(110px);
   font-family: poppins;
-  margin-top: 5px;
   .ProductPhoto-div-img {
-    border-radius: 10px;
+    border-radius: torem(10px);
     background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-      border-radius: 10px;
-      height: 110px;
-      width: 110px;
+      border-radius: torem(10px);
+      height: torem(110px);
+      width: torem(110px);
       object-fit: cover;
     }
   }

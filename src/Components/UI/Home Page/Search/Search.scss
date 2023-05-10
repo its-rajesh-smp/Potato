@@ -1,3 +1,4 @@
+@import "../../../../Styles/color";
 .Search-div {
   display: grid;
   background-color: white;
@@ -5,16 +6,18 @@
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: torem(3px);
+  margin-bottom: torem(5px);
+  border: 1px solid gray;
   input {
     border: none;
-    height: 40px;
+    height: torem(40px);
     outline: none;
-    padding: 0px 5px;
+    padding: 0px torem(5px);
   }
   i {
     cursor: pointer;
-    height: 40px;
+    height: torem(40px);
     display: flex;
     justify-content: center;
     align-items: center;

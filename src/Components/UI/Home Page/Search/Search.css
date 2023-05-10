@@ -5,17 +5,19 @@
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 0.1875rem;
+  margin-bottom: 0.3125rem;
+  border: 1px solid gray;
 }
 .Search-div input {
   border: none;
-  height: 40px;
+  height: 2.5rem;
   outline: none;
-  padding: 0px 5px;
+  padding: 0px 0.3125rem;
 }
 .Search-div i {
   cursor: pointer;
-  height: 40px;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

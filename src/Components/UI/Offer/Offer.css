@@ -1,22 +1,22 @@
 .Offer-div {
   box-sizing: border-box;
-  padding: 10px;
-  height: 70px;
-  width: 150px;
+  padding: 0.625rem;
+  height: 4.375rem;
+  width: 9.375rem;
   background-color: #ffffff;
   border: 1px dashed black;
   cursor: pointer;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 5px;
-  border-radius: 5px;
+  gap: 0.3125rem;
+  border-radius: 0.3125rem;
   font-family: poppins;
-  font-size: 12px;
-  margin-right: 5px;
+  font-size: 0.75rem;
+  margin-right: 0.3125rem;
 }
 .Offer-div .promo {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 

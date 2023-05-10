@@ -1,15 +1,17 @@
+@import "../../../Styles/color";
 .OffersContainer-div {
-  height: 150px;
+  height: torem(150px);
   background-color: white;
   border: 1px solid gray;
+  margin-bottom: torem(5px);
   h3 {
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 10px;
+    gap: torem(5px);
+    padding: torem(10px);
     font-family: poppins;
     i {
-      font-size: 22px;
+      font-size: torem(22px);
       color: #f4884f;
     }
   }
@@ -23,5 +25,5 @@
 }
 .my-offers-div {
   display: inline-flex;
-  margin: 0px 10px;
+  margin: 0px torem(10px);
 }

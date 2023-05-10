@@ -1,27 +1,42 @@
+@import "../../../../Styles/color";
 .SelectedCurrentLocation-div {
-  height: 46px;
+  height: torem(46px);
   background-color: #ffffff;
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 15px;
+  padding: torem(15px);
   box-shadow: 1px 1px 3px black;
   font-family: poppins;
-  font-size: 16px;
+  font-size: torem(16px);
   color: #e66158;
   font-weight: 600;
   .SelectedCurrentLocation-div-location {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: torem(5px);
   }
   .SelectedCurrentLocation-div-ASAP {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: torem(3px);
+  }
+}
+
+//? Media
+/* Smartphones  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .SelectedCurrentLocation-div {
+    font-size: 10px;
+  }
+}
+/* Tablet */
+@media only screen and (min-device-width: 480px) and (max-device-width: 1080px) {
+  .SelectedCurrentLocation-div {
+    font-size: 12px;
   }
 }

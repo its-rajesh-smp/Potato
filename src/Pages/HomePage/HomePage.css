@@ -1,1 +1,4 @@
-/*# sourceMappingURL=HomePage.css.map */
+.HomePage-div {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=HomePage.css.map */

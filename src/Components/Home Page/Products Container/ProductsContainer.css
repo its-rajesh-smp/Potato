@@ -1,3 +1,8 @@
 .ProductContainer-div {
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+  margin-bottom: 6.5625rem;
 }/*# sourceMappingURL=ProductsContainer.css.map */

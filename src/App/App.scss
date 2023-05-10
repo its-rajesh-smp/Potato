@@ -12,13 +12,13 @@ html {
 }
 
 .App-div {
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding: 5px;
 }
 
 .container {
+  padding: 2px;
 }
 
 .pageContainer {
@@ -29,19 +29,13 @@ html {
   html {
     font-size: toper(12);
   }
-  .pageContainer {
-    padding: 5px;
+  .App-div {
+    width: 100%;
   }
 }
 /* Tablet */
 @media only screen and (min-device-width: 480px) and (max-device-width: 1080px) {
   html {
     font-size: toper(15);
-  }
-}
-/* Tablet 2 */
-@media only screen and (min-device-width: 480px) and (max-device-width: 900px) {
-  html {
-    font-size: toper(10);
   }
 }

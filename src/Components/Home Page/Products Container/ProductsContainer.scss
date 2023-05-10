@@ -1,3 +1,9 @@
+@import "../../../Styles/color";
 .ProductContainer-div {
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: torem(5px);
+  margin-bottom: torem(105px);
 }
