@@ -1,16 +1,18 @@
 .BillDetails-div {
   font-family: poppins;
-  padding: 20px 0px;
+  padding: 0.625rem 0.625rem;
   border-bottom: 1px solid #939393;
+  background-color: white;
+  margin-top: 0.3125rem;
 }
 .BillDetails-div h3 {
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   color: gray;
 }
 .BillDetails-div div {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .BillDetails-div div span {
   font-weight: 600;
@@ -19,5 +21,5 @@
   font-weight: 600;
 }
 .BillDetails-div .total .totalAmount {
-  font-size: 22px;
+  font-size: 1.375rem;
 }/*# sourceMappingURL=BillDetails.css.map */

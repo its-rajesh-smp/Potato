@@ -1,19 +1,22 @@
 .DelivaryAddress-div {
   font-family: poppins;
-  padding: 10px 0px;
+  background-color: white;
+  margin-bottom: 0.3125rem;
+  padding: 0.625rem 0.625rem;
+  border-bottom: 1px solid #939393;
 }
 .DelivaryAddress-div h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .DelivaryAddress-div .formTo {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .DelivaryAddress-div .formTo span {
   font-weight: 600;
 }
 .DelivaryAddress-div .deliveryTime {
-  margin-top: 10px;
-  font-size: 11px;
+  margin-top: 0.625rem;
+  font-size: 0.6875rem;
 }
 .DelivaryAddress-div .deliveryTime span {
   font-weight: 600;

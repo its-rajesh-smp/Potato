@@ -1,15 +1,18 @@
+@import "../../../Styles/color";
 .BillDetails-div {
   font-family: poppins;
-  padding: 20px 0px;
+  padding: torem(10px) torem(10px);
   border-bottom: 1px solid #939393;
+  background-color: white;
+  margin-top: torem(5px);
   h3 {
-    padding-bottom: 10px;
+    padding-bottom: torem(10px);
     color: gray;
   }
   div {
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: torem(13px);
     span {
       font-weight: 600;
     }
@@ -17,7 +20,7 @@
   .total {
     font-weight: 600;
     .totalAmount {
-      font-size: 22px;
+      font-size: torem(22px);
     }
   }
 }

@@ -1,20 +1,24 @@
-.DelivaryAddress-div{
-    font-family: poppins;
-    padding: 10px 0px;
-    h3{
-        margin-bottom: 5px;
+@import "../../../Styles/color";
+.DelivaryAddress-div {
+  font-family: poppins;
+  background-color: white;
+  margin-bottom: torem(5px);
+  padding: torem(10px) torem(10px);
+  border-bottom: 1px solid #939393;
+  h3 {
+    margin-bottom: torem(5px);
+  }
+  .formTo {
+    font-size: torem(12px);
+    span {
+      font-weight: 600;
     }
-    .formTo{
-        font-size: 12px;
-        span{
-            font-weight: 600;
-        }
+  }
+  .deliveryTime {
+    margin-top: torem(10px);
+    font-size: torem(11px);
+    span {
+      font-weight: 600;
     }
-    .deliveryTime{
-        margin-top: 10px;
-        font-size: 11px;
-        span{
-            font-weight: 600;
-        }
-    }
+  }
 }

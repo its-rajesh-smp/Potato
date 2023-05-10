@@ -1,0 +1,65 @@
+.AddSubscription-div {
+  background-color: white;
+  border-bottom: 1px solid rgb(174, 174, 174);
+  margin-bottom: 0.3125rem;
+  padding: 0.625rem 0.625rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.AddSubscription-div .AddSubscription-div__left {
+  color: gray;
+}
+.AddSubscription-div .AddSubscription-div__left h3 {
+  font-size: 1.125rem;
+  font-family: poppins;
+  margin-bottom: 0.3125rem;
+}
+.AddSubscription-div .AddSubscription-div__left p {
+  font-family: poppins;
+  font-size: 0.8125rem;
+}
+.AddSubscription-div .AddSubscription-div__left p span {
+  color: black;
+  font-weight: 500;
+}
+.AddSubscription-div .AddSubscription-div__left .AddSubscription-div__left__time {
+  margin-bottom: 0.3125rem;
+  display: flex;
+  gap: 1.25rem;
+}
+.AddSubscription-div .AddSubscription-div__right {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.AddSubscription-div .AddSubscription-div__right .inputDiv {
+  display: flex;
+  gap: 0.3125rem;
+}
+.AddSubscription-div .AddSubscription-div__right .inputDiv input {
+  height: 1.875rem;
+  padding: 0.3125rem 0.3125rem;
+}
+.AddSubscription-div .AddSubscription-div__right .btnDiv {
+  display: flex;
+  gap: 0.3125rem;
+  width: 30%;
+  margin-top: 0.3125rem;
+  justify-content: space-between;
+}
+.AddSubscription-div .AddSubscription-div__right .btnDiv button {
+  width: 100%;
+  padding: 0.625rem 0.625rem;
+  border: none;
+  font-size: 0.8125rem;
+  font-family: roboto;
+  font-weight: 500;
+  color: white;
+}
+.AddSubscription-div .AddSubscription-div__right .btnDiv button:first-child {
+  background-color: #1877f2;
+}
+.AddSubscription-div .AddSubscription-div__right .btnDiv button:last-child {
+  background-color: red;
+}/*# sourceMappingURL=AddSubscription.css.map */

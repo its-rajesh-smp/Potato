@@ -1,15 +1,20 @@
-@import "../../../Styles/color";
+@import "../../Styles/color";
 .OffersContainer-div {
   height: torem(150px);
   background-color: white;
   border: 1px solid gray;
   margin-bottom: torem(5px);
+
   h3 {
     display: flex;
     align-items: center;
     gap: torem(5px);
     padding: torem(10px);
     font-family: poppins;
+    position: sticky;
+    left: torem(10px);
+    width: torem(200px);
+
     i {
       font-size: torem(22px);
       color: #f4884f;

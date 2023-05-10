@@ -1,0 +1,66 @@
+@import "../../../Styles/color";
+.AddSubscription-div {
+  background-color: white;
+  border-bottom: 1px solid rgb(174, 174, 174);
+  margin-bottom: torem(5px);
+  padding: torem(10px) torem(10px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .AddSubscription-div__left {
+    color: gray;
+    h3 {
+      font-size: torem(18px);
+      font-family: poppins;
+      margin-bottom: torem(5px);
+    }
+    p {
+      font-family: poppins;
+      font-size: torem(13px);
+      span {
+        color: black;
+        font-weight: 500;
+      }
+    }
+    .AddSubscription-div__left__time {
+      margin-bottom: torem(5px);
+      display: flex;
+      gap: torem(20px);
+    }
+  }
+  .AddSubscription-div__right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    .inputDiv {
+      display: flex;
+      gap: torem(5px);
+      input {
+        height: torem(30px);
+        padding: torem(5px) torem(5px);
+      }
+    }
+    .btnDiv {
+      display: flex;
+      gap: torem(5px);
+      width: 30%;
+      margin-top: torem(5px);
+      justify-content: space-between;
+      button {
+        width: 100%;
+        padding: torem(10px) torem(10px);
+        border: none;
+        font-size: torem(13px);
+        font-family: roboto;
+        font-weight: 500;
+        color: white;
+        &:first-child {
+          background-color: $myblue;
+        }
+        &:last-child {
+          background-color: red;
+        }
+      }
+    }
+  }
+}

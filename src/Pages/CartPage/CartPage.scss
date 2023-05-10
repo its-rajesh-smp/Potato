@@ -1,0 +1,14 @@
+@import "../../Styles/color";
+.CartPage-div {
+}
+.checkOutBtn {
+  width: 100%;
+  height: torem(60px);
+  background-color: $myblue;
+  margin: torem(5px) 0px;
+  border: none;
+  font-size: torem(16px);
+  font-family: poppins;
+  color: white;
+  border-radius: torem(5px);
+}

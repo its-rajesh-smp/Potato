@@ -2,29 +2,32 @@
   display: flex;
   justify-content: space-between;
   font-family: poppins;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .CartItem-div .CartItem-div-item {
-  height: -moz-min-content;
   height: min-content;
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
+  justify-content: center;
   align-items: center;
 }
 .CartItem-div .CartItem-div-item i {
   color: green;
 }
 .CartItem-div .CartItem-div-item-price {
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: end;
-  line-height: 20px;
+  line-height: 1.25rem;
   font-weight: 600;
 }
 .CartItem-div .CartItem-div-item-price .CartItem-div-item-quantity {
-  padding: 2px 30px;
+  display: flex;
+  padding: 0.125rem 0.625rem;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #e66158;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.3125rem;
 }
 .CartItem-div .CartItem-div-item-price .original {
   text-decoration: line-through;
