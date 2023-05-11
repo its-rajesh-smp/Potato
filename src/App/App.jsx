@@ -8,8 +8,8 @@ function App(props) {
   return (
     <div className=" App-div ">
       <Header />
-      {/* <HomePage /> */}
-      <CartPage />
+      <HomePage />
+      {/* <CartPage /> */}
     </div>
   );
 }

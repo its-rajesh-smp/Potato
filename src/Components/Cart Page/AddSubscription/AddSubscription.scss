@@ -35,7 +35,9 @@
     .inputDiv {
       display: flex;
       gap: torem(5px);
+      width: 100%;
       input {
+        width: 100%;
         height: torem(30px);
         padding: torem(5px) torem(5px);
       }
@@ -43,7 +45,7 @@
     .btnDiv {
       display: flex;
       gap: torem(5px);
-      width: 30%;
+      width: 100%;
       margin-top: torem(5px);
       justify-content: space-between;
       button {
@@ -63,4 +65,18 @@
       }
     }
   }
+}
+
+//? Media
+/* Smartphones  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .AddSubscription-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+}
+/* Tablet */
+@media only screen and (min-device-width: 480px) and (max-device-width: 1080px) {
 }
