@@ -1,0 +1,15 @@
+@import "../../../Styles/color";
+.PaymentMethodContainer-div {
+  background-color: white;
+  font-family: poppins;
+  padding: torem(10px);
+  display: flex;
+  flex-direction: column;
+  gap: torem(10px);
+  border-bottom: 1px solid gray;
+  margin-top: torem(5px);
+  h3 {
+    padding-bottom: torem(torem(10px));
+    color: gray;
+  }
+}

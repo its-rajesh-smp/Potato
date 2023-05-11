@@ -1,0 +1,16 @@
+@import "../../Styles/color";
+.CheckoutPage-div {
+}
+.CheckoutPage-div_addToCartBTN {
+  width: 100%;
+  background-color: $myorng;
+  border: none;
+  border-radius: torem(5px);
+  margin-top: torem(10px);
+  padding: torem(20px) 0px;
+  font-family: roboto;
+  font-weight: 500;
+  color: white;
+  font-size: torem(16px);
+  margin-bottom: torem(10px);
+}

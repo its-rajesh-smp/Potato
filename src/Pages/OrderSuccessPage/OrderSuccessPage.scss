@@ -1,3 +1,4 @@
+@import "../../Styles/color";
 .OrderSuccessPage-div {
   display: flex;
   justify-content: center;
@@ -16,39 +17,39 @@
     transition-duration: 2s;
   }
   p {
-    font-size: 12px;
+    font-size: torem(12px);
   }
 }
 
 @keyframes jump {
   10% {
-    top: -150px;
+    top: torem(-150px);
   }
   20% {
-    top: 0px;
+    top: torem(0px);
   }
   30% {
-    top: -100px;
+    top: torem(-100px);
   }
   40% {
-    top: 0px;
+    top: torem(0px);
   }
   50% {
-    top: -50px;
+    top: torem(-50px);
   }
   60% {
-    top: 0px;
+    top: torem(0px);
   }
   70% {
-    top: -40px;
+    top: torem(-40px);
   }
   80% {
-    top: 0px;
+    top: torem(0px);
   }
   90% {
-    top: -25px;
+    top: torem(-25px);
   }
   100% {
-    top: 0px;
+    top: torem(0px);
   }
 }

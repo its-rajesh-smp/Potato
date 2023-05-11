@@ -4,14 +4,18 @@ import Header from "../Components/Header/Header";
 import HomePage from "../Pages/HomePage/HomePage";
 import CartPage from "../Pages/CartPage/CartPage";
 import ProductDetailsPage from "../Pages/ProductDetailsPage/ProductDetailsPage";
+import CheckoutPage from "../Pages/CheckoutPage/CheckoutPage";
+import OrderSuccessPage from "../Pages/OrderSuccessPage/OrderSuccessPage";
 
 function App(props) {
   return (
     <div className=" App-div ">
       <Header />
-      {/* <HomePage /> */}
+      <HomePage />
+      {/* <ProductDetailsPage /> */}
       {/* <CartPage /> */}
-      <ProductDetailsPage />
+      {/* <CheckoutPage /> */}
+      {/* <OrderSuccessPage /> */}
     </div>
   );
 }

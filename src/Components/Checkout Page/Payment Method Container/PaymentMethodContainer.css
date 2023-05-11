@@ -1,0 +1,14 @@
+.PaymentMethodContainer-div {
+  background-color: white;
+  font-family: poppins;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  border-bottom: 1px solid gray;
+  margin-top: 0.3125rem;
+}
+.PaymentMethodContainer-div h3 {
+  padding-bottom: 0.625rem/16pxrem;
+  color: gray;
+}/*# sourceMappingURL=PaymentMethodContainer.css.map */

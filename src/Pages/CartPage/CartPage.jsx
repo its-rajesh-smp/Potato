@@ -1,8 +1,8 @@
 import React from "react";
 import "./CartPage.css";
-import BillDetails from "../../Components/Cart Page/BillDetails/BillDetails";
+import BillDetails from "../../Components/BillDetails/BillDetails";
+import DelivaryAddress from "../../Components/DelivaryAddress/DelivaryAddress";
 import CartProductsContainer from "../../Components/Cart Page/CartProductsContainer/CartProductsContainer";
-import DelivaryAddress from "../../Components/Cart Page/DelivaryAddress/DelivaryAddress";
 import AddSubscription from "../../Components/Cart Page/AddSubscription/AddSubscription";
 import OffersContainer from "../../Components/Offers Container/OffersContainer";
 
