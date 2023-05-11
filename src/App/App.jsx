@@ -6,16 +6,18 @@ import CartPage from "../Pages/CartPage/CartPage";
 import ProductDetailsPage from "../Pages/ProductDetailsPage/ProductDetailsPage";
 import CheckoutPage from "../Pages/CheckoutPage/CheckoutPage";
 import OrderSuccessPage from "../Pages/OrderSuccessPage/OrderSuccessPage";
+import Login from "../Pages/Login/Login";
 
 function App(props) {
   return (
     <div className=" App-div ">
-      <Header />
-      {/* <HomePage /> */}
+      {/* <Header /> */}
+      {/* <Login /> */}
+      <HomePage />
       {/* <ProductDetailsPage /> */}
       {/* <CartPage /> */}
       {/* <CheckoutPage /> */}
-      <OrderSuccessPage />
+      {/* <OrderSuccessPage /> */}
     </div>
   );
 }

@@ -1,0 +1,58 @@
+@import "../../Styles/color";
+.Login-div {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  height: 100vh;
+  padding: torem(20px);
+  font-family: poppins;
+  flex-direction: column;
+  gap: torem(50px);
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: torem(10px);
+    input {
+      padding-left: torem(10px);
+      height: torem(50px);
+      font-family: poppins;
+    }
+    button {
+      font-size: torem(16px);
+      background-color: $myblue;
+      color: white;
+      font-family: roboto;
+      border: none;
+      font-weight: 500;
+      height: torem(50px);
+    }
+    .form_div {
+      display: flex;
+      flex-direction: column;
+      font-size: torem(12px);
+      align-items: center;
+      p {
+        &:first-child {
+          color: red;
+        }
+        &:last-child {
+          color: $myblue;
+        }
+      }
+    }
+  }
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: torem(150px);
+  }
+  h1 {
+    font-size: torem(40px);
+    border-bottom: 5px solid $myblue;
+  }
+}

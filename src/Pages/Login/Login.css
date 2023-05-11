@@ -1,0 +1,55 @@
+.Login-div {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  height: 100vh;
+  padding: 1.25rem;
+  font-family: poppins;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+.Login-div form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 0.625rem;
+}
+.Login-div form input {
+  padding-left: 0.625rem;
+  height: 3.125rem;
+  font-family: poppins;
+}
+.Login-div form button {
+  font-size: 1rem;
+  background-color: #1877f2;
+  color: white;
+  font-family: roboto;
+  border: none;
+  font-weight: 500;
+  height: 3.125rem;
+}
+.Login-div form .form_div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  align-items: center;
+}
+.Login-div form .form_div p:first-child {
+  color: red;
+}
+.Login-div form .form_div p:last-child {
+  color: #1877f2;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome img {
+  width: 9.375rem;
+}
+.welcome h1 {
+  font-size: 2.5rem;
+  border-bottom: 5px solid #1877f2;
+}/*# sourceMappingURL=Login.css.map */

@@ -2,6 +2,8 @@
   bottom: 0.625rem;
   position: fixed;
   height: 4.375rem;
+  left: 0px;
+  right: 0;
 }
 
 .GoToCart-div-button {
