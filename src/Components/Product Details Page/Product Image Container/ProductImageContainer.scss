@@ -1,0 +1,45 @@
+@import "../../../Styles/color";
+.ProductImageContainer-div {
+  display: flex;
+  margin-top: torem(5px);
+  height: torem(500px);
+  gap: torem(5px);
+  .bigImg {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .imageName {
+      position: absolute;
+      bottom: torem(20px);
+      left: torem(20px);
+      font-family: roboto;
+      color: white;
+    }
+  }
+  .smallImg {
+    display: grid;
+    grid-template-rows: calc(torem(250px) - 2.5px) calc(torem(250px) - 2.5px);
+    grid-template-columns: 1fr 1fr;
+    gap: torem(5px);
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//? Media
+/* Smartphones  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .ProductImageContainer-div {
+    height: 100%;
+    flex-direction: column;
+  }
+}
+/* Tablet 2 */
+@media only screen and (min-device-width: 480px) and (max-device-width: 900px) {
+}

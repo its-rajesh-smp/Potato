@@ -1,0 +1,41 @@
+.ProductImageContainer-div {
+  display: flex;
+  margin-top: 0.3125rem;
+  height: 31.25rem;
+  gap: 0.3125rem;
+}
+.ProductImageContainer-div .bigImg {
+  position: relative;
+}
+.ProductImageContainer-div .bigImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ProductImageContainer-div .bigImg .imageName {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  font-family: roboto;
+  color: white;
+}
+.ProductImageContainer-div .smallImg {
+  display: grid;
+  grid-template-rows: calc(15.625rem - 2.5px) calc(15.625rem - 2.5px);
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3125rem;
+}
+.ProductImageContainer-div .smallImg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Smartphones  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .ProductImageContainer-div {
+    height: 100%;
+    flex-direction: column;
+  }
+}
+/* Tablet 2 *//*# sourceMappingURL=ProductImageContainer.css.map */
