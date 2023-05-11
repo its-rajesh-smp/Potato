@@ -11,11 +11,11 @@ function App(props) {
   return (
     <div className=" App-div ">
       <Header />
-      <HomePage />
+      {/* <HomePage /> */}
       {/* <ProductDetailsPage /> */}
       {/* <CartPage /> */}
       {/* <CheckoutPage /> */}
-      {/* <OrderSuccessPage /> */}
+      <OrderSuccessPage />
     </div>
   );
 }
