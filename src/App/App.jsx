@@ -15,9 +15,9 @@ function App(props) {
     <div className=" App-div ">
       <Header />
       {/* <Login /> */}
-      {/* <HomePage /> */}
+      <HomePage />
       {/* <UserProfilePage /> */}
-      <MyOrderPage />
+      {/* <MyOrderPage /> */}
       {/* <ProductDetailsPage /> */}
       {/* <CartPage /> */}
       {/* <CheckoutPage /> */}
