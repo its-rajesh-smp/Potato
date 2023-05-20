@@ -11,10 +11,12 @@ function App(props) {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
+  // Fetch User
   useEffect(() => {
     dispatch(fetchExistingUser(setLoading));
   }, []);
 
+  // Set Loading
   if (loading) {
     return <LoadingPage />;
   }

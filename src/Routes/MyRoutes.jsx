@@ -13,12 +13,16 @@ import MyOrderPage from "../Pages/MyOrderPage/MyOrderPage";
 
 function MyRoutes(props) {
   const isAuth = useSelector((state) => state.authSlice.isAuth);
-  console.log(isAuth);
   return (
     <Routes>
       {isAuth ? (
         <>
           <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/food:foodId" element={<ProductDetailsPage />} />
+          <Route path="/user" element={<UserProfilePage />} />
+          <Route path="/myorder" element={<MyOrderPage />} />
+          <Route path="*" element={<HomePage />} />
         </>
       ) : (
         <>
