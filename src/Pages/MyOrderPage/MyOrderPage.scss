@@ -1,0 +1,12 @@
+@import "../../Styles/color";
+.MyOrderPage-div {
+  padding: torem(10px);
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  gap: torem(10px);
+  h2 {
+    padding: torem(10px);
+    background-color: white;
+  }
+}

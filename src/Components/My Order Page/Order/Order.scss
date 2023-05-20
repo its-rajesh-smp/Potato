@@ -1,0 +1,25 @@
+.Order-div {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  .Order-div__imgContainer {
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  progress {
+    width: 50%;
+  }
+  .Order-div__priceContainer {
+    text-align: end;
+  }
+}

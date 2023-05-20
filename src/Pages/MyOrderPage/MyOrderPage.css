@@ -1,0 +1,11 @@
+.MyOrderPage-div {
+  padding: 0.625rem;
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.MyOrderPage-div h2 {
+  padding: 0.625rem;
+  background-color: white;
+}/*# sourceMappingURL=MyOrderPage.css.map */
