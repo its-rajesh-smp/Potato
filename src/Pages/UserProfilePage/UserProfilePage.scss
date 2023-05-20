@@ -1,3 +1,7 @@
+@import "../../Styles/color";
 .UserProfilePage-div {
   font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  gap: torem(5px);
 }

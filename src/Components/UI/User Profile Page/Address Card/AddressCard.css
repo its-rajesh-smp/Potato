@@ -2,13 +2,22 @@
   display: grid;
   grid-template-columns: 0.05fr 1fr;
   align-items: center;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 .AddressCard-div .AddressCard-div__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.75rem;
+}
+.AddressCard-div .AddressCard-div__container .AddressCard-div__NameContainer {
+  display: flex;
+  align-items: first baseline;
+  gap: 0.625rem;
+}
+.AddressCard-div .AddressCard-div__container .AddressCard-div__NameContainer i {
+  color: #1877f2;
+  font-size: 1.25rem;
 }
 .AddressCard-div .AddressCard-div__container .AddressCard-div__NameContainer p:first-child {
   font-weight: 600;

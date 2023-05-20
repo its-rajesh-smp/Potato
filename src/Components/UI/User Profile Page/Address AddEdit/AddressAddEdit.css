@@ -1,0 +1,27 @@
+.AddressAddEdit-div {
+  display: flex;
+  margin-top: 0.625rem;
+  flex-direction: column;
+}
+.AddressAddEdit-div div {
+  display: flex;
+}
+.AddressAddEdit-div input {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: poppins;
+  font-weight: 600;
+  padding: 0.3125rem;
+}
+.AddressAddEdit-div button {
+  margin-top: 0.625rem;
+  padding: 0.3125rem;
+  border-radius: 0.1875rem;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #1877f2;
+  color: white;
+  font-family: poppins;
+  font-weight: 600;
+}/*# sourceMappingURL=AddressAddEdit.css.map */

@@ -1,0 +1,28 @@
+@import "../../../../Styles/color";
+.AddressAddEdit-div {
+  display: flex;
+  margin-top: torem(10px);
+  flex-direction: column;
+  div {
+    display: flex;
+  }
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: poppins;
+    font-weight: 600;
+    padding: torem(5px);
+  }
+  button {
+    margin-top: torem(10px);
+    padding: torem(5px);
+    border-radius: torem(3px);
+    width: 100%;
+    font-size: torem(16px);
+    border: none;
+    background-color: $myblue;
+    color: white;
+    font-family: poppins;
+    font-weight: 600;
+  }
+}

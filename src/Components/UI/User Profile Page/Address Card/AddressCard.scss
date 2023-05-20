@@ -1,14 +1,22 @@
+@import "../../../../Styles/color";
 .AddressCard-div {
   display: grid;
   grid-template-columns: 0.05fr 1fr;
   align-items: center;
-  padding: 5px;
+  padding: torem(5px);
   .AddressCard-div__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: torem(12px);
     .AddressCard-div__NameContainer {
+      display: flex;
+      align-items: first baseline;
+      i {
+        color: $myblue;
+        font-size: torem(20px);
+      }
+      gap: torem(10px);
       p {
         &:first-child {
           font-weight: 600;
