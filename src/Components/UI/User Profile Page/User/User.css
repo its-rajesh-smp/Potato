@@ -1,0 +1,11 @@
+.User-div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.User-div i {
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=User.css.map */

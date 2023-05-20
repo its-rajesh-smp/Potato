@@ -7,13 +7,15 @@ import ProductDetailsPage from "../Pages/ProductDetailsPage/ProductDetailsPage";
 import CheckoutPage from "../Pages/CheckoutPage/CheckoutPage";
 import OrderSuccessPage from "../Pages/OrderSuccessPage/OrderSuccessPage";
 import Login from "../Pages/Login/Login";
+import UserProfilePage from "../Pages/UserProfilePage/UserProfilePage";
 
 function App(props) {
   return (
     <div className=" App-div ">
       <Header />
       {/* <Login /> */}
-      <HomePage />
+      {/* <HomePage /> */}
+      <UserProfilePage />
       {/* <ProductDetailsPage /> */}
       {/* <CartPage /> */}
       {/* <CheckoutPage /> */}

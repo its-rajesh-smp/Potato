@@ -1,0 +1,11 @@
+.HambargarItem-div {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  align-items: center;
+  font-family: poppins;
+  padding: 0.3125rem 0.625rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}/*# sourceMappingURL=HambargarItem.css.map */

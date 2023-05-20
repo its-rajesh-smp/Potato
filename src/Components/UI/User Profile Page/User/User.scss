@@ -1,0 +1,12 @@
+@import "../../../../Styles/color";
+.User-div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  i {
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+  }
+}

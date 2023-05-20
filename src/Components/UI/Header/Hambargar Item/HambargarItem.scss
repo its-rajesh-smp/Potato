@@ -1,0 +1,12 @@
+@import "../../../../Styles/color";
+.HambargarItem-div {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: torem(20px);
+  align-items: center;
+  font-family: poppins;
+  padding: torem(5px) torem(10px);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
