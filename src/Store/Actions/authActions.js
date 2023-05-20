@@ -30,7 +30,7 @@ export const createNewUser = (enteredInput, setLoading) => {
 /* -------------------------------------------------------------------------- */
 /*                                 FETCH USER                                 */
 /* -------------------------------------------------------------------------- */
-export const fetchExistingUser = () => {
+export const fetchExistingUser = (setLoading) => {
     return async (dispatch, getState) => {
         try {
             const localIdToken = localStorage.getItem("potatoUser")
@@ -43,6 +43,7 @@ export const fetchExistingUser = () => {
         } catch (error) {
             console.log(error);
         }
+        setLoading(false)
     }
 }
 
