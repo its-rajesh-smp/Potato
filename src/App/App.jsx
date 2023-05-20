@@ -11,7 +11,7 @@ import Login from "../Pages/Login/Login";
 function App(props) {
   return (
     <div className=" App-div ">
-      {/* <Header /> */}
+      <Header />
       {/* <Login /> */}
       <HomePage />
       {/* <ProductDetailsPage /> */}

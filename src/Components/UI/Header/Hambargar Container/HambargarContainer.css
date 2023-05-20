@@ -1,0 +1,8 @@
+.HambargarContainer-div {
+  height: calc(100vh - 3.75rem);
+  background-color: rgb(0, 0, 0);
+  width: 50vw;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid white;
+}/*# sourceMappingURL=HambargarContainer.css.map */

@@ -2,12 +2,13 @@ import React from "react";
 import "./Header.css";
 import Hambargar from "../UI/Header/Hambargar/Hambargar";
 import User from "../UI/Header/User/User";
+import HambargarContainer from "../UI/Header/Hambargar Container/HambargarContainer";
 
 function Header(props) {
   return (
-    <div className=" Header-div  container">
+    <div className=" Header-div">
       <Hambargar />
-      <User />
+      <HambargarContainer />
     </div>
   );
 }
