@@ -1,8 +1,9 @@
 @import "../../../Styles/color";
 .ProductImageContainer-div {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: torem(500px);
   margin-top: torem(5px);
-  height: torem(500px);
   gap: torem(5px);
   .bigImg {
     position: relative;
@@ -24,6 +25,7 @@
     grid-template-rows: calc(torem(250px) - 2.5px) calc(torem(250px) - 2.5px);
     grid-template-columns: 1fr 1fr;
     gap: torem(5px);
+    width: 100%;
     img {
       object-fit: cover;
       width: 100%;

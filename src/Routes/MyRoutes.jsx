@@ -19,7 +19,7 @@ function MyRoutes(props) {
         <>
           <Route path="/" element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
-          <Route path="/food:foodId" element={<ProductDetailsPage />} />
+          <Route path="/food/:foodId" element={<ProductDetailsPage />} />
           <Route path="/user" element={<UserProfilePage />} />
           <Route path="/myorder" element={<MyOrderPage />} />
           <Route path="*" element={<HomePage />} />

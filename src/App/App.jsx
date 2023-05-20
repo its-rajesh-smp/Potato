@@ -6,6 +6,7 @@ import MyRoutes from "../Routes/MyRoutes";
 import { useDispatch } from "react-redux";
 import { fetchExistingUser } from "../Store/Actions/authActions";
 import LoadingPage from "../Pages/Loading Page/LoadingPage";
+import { fetchStoreProduct } from "../Store/Actions/productActions";
 
 function App(props) {
   const [loading, setLoading] = useState(true);
@@ -14,6 +15,7 @@ function App(props) {
   // Fetch User
   useEffect(() => {
     dispatch(fetchExistingUser(setLoading));
+    dispatch(fetchStoreProduct());
   }, []);
 
   // Set Loading

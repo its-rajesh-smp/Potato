@@ -6,17 +6,18 @@ import { useNavigate } from "react-router-dom";
 
 function Product(props) {
   const navigate = useNavigate();
+
   /* -------------------------------------------------------------------------- */
   /*                          ON CLICK PRODUCT HANDELER                         */
   /* -------------------------------------------------------------------------- */
   const onClickProduct = () => {
-    navigate("/food/58sdf89sd");
+    navigate(`/food/${props.data.id}`);
   };
 
   return (
     <div onClick={onClickProduct} className=" Product-div ">
-      <ProductDetails />
-      <ProductPhoto />
+      <ProductDetails data={props.data} />
+      <ProductPhoto data={props.data} />
     </div>
   );
 }

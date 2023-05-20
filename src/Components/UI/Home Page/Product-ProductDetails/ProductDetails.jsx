@@ -1,30 +1,33 @@
 import React from "react";
-import "./ProductDetails.css"
+import "./ProductDetails.css";
 
 function ProductDetails(props) {
-    return (
-        <div className="ProductDetails-div">
-            <div className="productName">
-                <i className="bx bx-checkbox-square"></i>
-                <p>{"biriyani"}</p>
-            </div>
+  return (
+    <div className="ProductDetails-div">
+      <div className="productName">
+        <i
+          style={{ color: props.data.type === "veg" ? "green" : "red" }}
+          className="bx bx-checkbox-square"
+        ></i>
+        <p>{props.data.name}</p>
+      </div>
 
-            <p className="ProductDetails-price">
-                ₹<span>{"200"}</span>
-            </p>
+      <p className="ProductDetails-price">
+        ₹<span>{props.data.price}</span>
+      </p>
 
-            <p className="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque similique aliquid dicta repudiandae dolor, delectus necessitatibus debitis esse expedita culpa rem hic numquam quod minima aliquam iusto earum quis. Rem.</p>
+      <p className="desc">{props.data.desc}</p>
 
-            <div className="likeShare">
-                <button>
-                    <i className="bx bx-heart"></i>
-                </button>
-                <button>
-                    <i className="bx bx-share"></i>
-                </button>
-            </div>
-        </div>
-    );
+      <div className="likeShare">
+        <button>
+          <i className="bx bx-heart"></i>
+        </button>
+        <button>
+          <i className="bx bx-share"></i>
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default ProductDetails
+export default ProductDetails;
