@@ -3,7 +3,7 @@ import "./ProductDetails.css";
 
 function ProductDetails(props) {
   return (
-    <div className="ProductDetails-div">
+    <div onClick={props.onClick} className="ProductDetails-div">
       <div className="productName">
         <i
           style={{ color: props.data.type === "veg" ? "green" : "red" }}

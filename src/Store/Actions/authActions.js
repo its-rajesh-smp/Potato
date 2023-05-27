@@ -34,11 +34,14 @@ export const fetchExistingUser = (setLoading) => {
     return async (dispatch, getState) => {
         try {
             const localIdToken = localStorage.getItem("potatoUser")
-            if (localIdToken === null) { return }
+            if (!localIdToken) {
+                setLoading(false)
+                return
+            }
             const { data: authData } = await axios.post(GET_USER, { idToken: localIdToken })
             const userEmail = authData.users[0].email.replace(".", "").replace("@", "")
             const { data: userData } = await axios.get(`${USERS}/${userEmail}.json`)
-            dispatch(fetchUser({ ...authData, ...userData }))
+            dispatch(fetchUser({ ...authData.users[0], ...userData, idToken: localIdToken }))
 
         } catch (error) {
             console.log(error);

@@ -15,8 +15,8 @@ function Product(props) {
   };
 
   return (
-    <div onClick={onClickProduct} className=" Product-div ">
-      <ProductDetails data={props.data} />
+    <div className=" Product-div ">
+      <ProductDetails onClick={onClickProduct} data={props.data} />
       <ProductPhoto data={props.data} />
     </div>
   );

@@ -8,24 +8,25 @@ const authReducer = createSlice({
         userDetails: {
             email: "",
         },
-        userAddress: [],
+
     },
     reducers: {
         createUser: (state, action) => {
             state.isAuth = true
             state.idToken = action.payload.idToken
-            state.userDetails.email = action.payload.idToken
+            state.userDetails.email = action.payload.email
         },
         loginUser: (state, action) => {
             state.isAuth = true
             state.idToken = action.payload.idToken
-            state.userDetails = action.payload.userDetails
-            state.userAddress = action.payload.userAddress
+            state.userDetails.email = action.payload.email
+
         },
         fetchUser: (state, action) => {
             state.isAuth = true
-            state.userDetails = action.payload.userDetails
-            state.userAddress = action.payload.userAddress
+            state.idToken = action.payload.idToken
+            state.userDetails.email = action.payload.email
+
         }
 
     }
