@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DelivaryAddress.css";
 import UserAddress from "../User Profile Page/User Address/UserAddress";
-import AddAddressBtn from "../UI/User Profile Page/AddAddressBtn/AddAddressBtn";
 
 function DelivaryAddress(props) {
+  const [showAllAddress, setShowAllAddress] = useState(false);
+
+  // On Click Change Address Btn
+  const onClickChangeAddress = () => {
+    setShowAllAddress((p) => !p);
+  };
+
   return (
     <>
       <div className=" DelivaryAddress-div ">
@@ -19,9 +25,9 @@ function DelivaryAddress(props) {
           Scheduled delivery for <span>Wednesday</span>,{" "}
           <span>05 Apr 2023</span> between <span>10:00 PM - 11:00 PM</span>
         </p>
-        <button>Edit Delivery Address</button>
+        <button onClick={onClickChangeAddress}>Change Delivery Address</button>
       </div>
-      <UserAddress />
+      {showAllAddress && <UserAddress onClick={onClickChangeAddress} />}
     </>
   );
 }

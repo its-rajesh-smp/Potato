@@ -4,6 +4,11 @@ import AddressCard from "../../UI/User Profile Page/Address Card/AddressCard";
 import AddressAddEdit from "../../UI/User Profile Page/Address AddEdit/AddressAddEdit";
 
 function UserAddress(props) {
+  // On Continue Btn Click
+  const onContinueBtnClick = () => {
+    props.onClick();
+  };
+
   return (
     <div className=" UserAddress-div ">
       <h3>Your Address</h3>
@@ -11,7 +16,7 @@ function UserAddress(props) {
         <AddressCard />
         <AddressCard />
         <AddressCard />
-        <button>CONTINUE</button>
+        <button onClick={onContinueBtnClick}>CONTINUE</button>
       </div>
     </div>
   );
