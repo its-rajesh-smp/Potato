@@ -27,7 +27,9 @@ function DelivaryAddress(props) {
         </p>
         <button onClick={onClickChangeAddress}>Change Delivery Address</button>
       </div>
-      {showAllAddress && <UserAddress onClick={onClickChangeAddress} />}
+      {showAllAddress && (
+        <UserAddress showContinue={true} onClick={onClickChangeAddress} />
+      )}
     </>
   );
 }

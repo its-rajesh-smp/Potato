@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AddressCard.css";
 import AddressAddEdit from "../Address AddEdit/AddressAddEdit";
 
@@ -12,20 +12,22 @@ function AddressCard(props) {
         <div className="AddressCard-div__container">
           <div className="AddressCard-div__NameContainer">
             <div>
-              <p>Rajesh Singha Mahapatra</p>
-              <p>8942908195</p>
+              <p>{props.data.name}</p>
+              <p>{props.data.phone}</p>
             </div>
             <i className="bx bxs-edit-alt"></i>
+            <p>X</p>
           </div>
           <div className="AddressCard-div__addressContainer">
-            <p>Jorisha</p>
-            <p>Simlapal</p>
-            <p>Bankura</p>
-            <p>WB</p>
-            <p>722151</p>
+            <p>{props.data.locality}</p>
+            <p>{props.data.city}</p>
+            <p>{props.data.district}</p>
+            <p>{props.data.state}</p>
+            <p>{props.data.pincode}</p>
           </div>
         </div>
       </div>
+
       {/* <AddressAddEdit /> */}
     </>
   );

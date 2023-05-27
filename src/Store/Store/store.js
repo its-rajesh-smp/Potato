@@ -4,6 +4,7 @@ import cartToggleReducer from "../Reducer/cartToggleReducer";
 import productReducer from "../Reducer/productReducer";
 import userCartReducer from "../Reducer/userCartReducer";
 import totalCartReducer from "../Reducer/totalCartReducer";
+import userAddressReducer from "../Reducer/userAddressReducer";
 
 const store = configureStore({
     reducer: {
@@ -11,7 +12,8 @@ const store = configureStore({
         cartToggleSlice: cartToggleReducer.reducer,
         productSlice: productReducer.reducer,
         userCartSlice: userCartReducer.reducer,
-        totalCartSlice: totalCartReducer.reducer
+        totalCartSlice: totalCartReducer.reducer,
+        userAddressSlice: userAddressReducer.reducer
     }
 })
 
