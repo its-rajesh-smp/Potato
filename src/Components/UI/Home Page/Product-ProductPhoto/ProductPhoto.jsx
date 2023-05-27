@@ -9,7 +9,7 @@ function ProductPhoto(props) {
         <img src={props.data.mainImg} alt="" />
       </div>
 
-      <ProductPhotoBtn data={props.data} />
+      <ProductPhotoBtn quantity={props.quantity} data={props.data} />
     </div>
   );
 }

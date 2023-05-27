@@ -17,7 +17,7 @@ function Product(props) {
   return (
     <div className=" Product-div ">
       <ProductDetails onClick={onClickProduct} data={props.data} />
-      <ProductPhoto data={props.data} />
+      <ProductPhoto quantity={props.quantity} data={props.data} />
     </div>
   );
 }

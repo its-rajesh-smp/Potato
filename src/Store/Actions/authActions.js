@@ -1,6 +1,7 @@
 import axios from "axios"
 import { GET_USER, SIGN_IN, SIGN_UP, USERS } from "../../Firebase/API_URL"
 import { createUser, fetchUser, loginUser } from "../Reducer/authReducer"
+import { fetchToCart } from "./userCartActions"
 
 
 
@@ -42,7 +43,7 @@ export const fetchExistingUser = (setLoading) => {
             const userEmail = authData.users[0].email.replace(".", "").replace("@", "")
             const { data: userData } = await axios.get(`${USERS}/${userEmail}.json`)
             dispatch(fetchUser({ ...authData.users[0], ...userData, idToken: localIdToken }))
-
+            dispatch(fetchToCart())
         } catch (error) {
             console.log(error);
         }
