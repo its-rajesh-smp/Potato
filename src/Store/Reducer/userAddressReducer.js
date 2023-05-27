@@ -6,9 +6,15 @@ const userAddressReducer = createSlice({
     reducers: {
         fetchAddress: (state, action) => {
             state.address = action.payload
+        },
+        addAddress: (state, action) => {
+            state.address.push(action.payload)
+        },
+        setAddress: (state, action) => {
+            state.address = action.payload
         }
     }
 })
 
-export const { fetchAddress } = userAddressReducer.actions
+export const { fetchAddress, addAddress, setAddress } = userAddressReducer.actions
 export default userAddressReducer
