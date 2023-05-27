@@ -22,7 +22,7 @@ function AddressCard(props) {
     <>
       <div className=" AddressCard-div ">
         <div>
-          <input type="radio" name="" id="" />
+          <input type="radio" name="address_radio" id="" />
         </div>
         <div className="AddressCard-div__container">
           <div className="AddressCard-div__NameContainer">
