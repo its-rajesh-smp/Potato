@@ -25,3 +25,16 @@ export const editAddress = (addressData, addressId) => {
         }
     }
 }
+
+
+
+export const removeAddress = (addressId) => {
+    return async (dispatch, getState) => {
+        const userEmail = getState().authSlice.userDetails.email.replace(".", "").replace("@", "")
+        try {
+            await axios.delete(`${USERS}/${userEmail}/address/${addressId}.json`)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}

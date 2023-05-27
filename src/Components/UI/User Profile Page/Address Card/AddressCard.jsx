@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./AddressCard.css";
 import AddressAddEdit from "../Address AddEdit/AddressAddEdit";
+import { useDispatch } from "react-redux";
+import { removeAddress } from "../../../../Store/Actions/userAddressActions";
 
 function AddressCard(props) {
+  const dispatch = useDispatch();
   const [toggleEdit, setToggleEdit] = useState(false);
 
   //On Click Edit Btn
@@ -11,7 +14,9 @@ function AddressCard(props) {
   };
 
   //On Delete Btn Click
-  const onDeleteBtnClick = () => {};
+  const onDeleteBtnClick = () => {
+    dispatch(removeAddress(props.data.addressId));
+  };
 
   return (
     <>
