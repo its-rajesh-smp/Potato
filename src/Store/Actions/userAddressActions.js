@@ -27,7 +27,6 @@ export const editAddress = (addressData, addressId) => {
                 }
                 return address
             })
-            console.log(updatedAddress);
             dispatch(setAddress(updatedAddress))
 
         } catch (error) {

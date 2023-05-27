@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "./DelivaryAddress.css";
 import UserAddress from "../User Profile Page/User Address/UserAddress";
+import { useSelector } from "react-redux";
 
 function DelivaryAddress(props) {
   const [showAllAddress, setShowAllAddress] = useState(false);
+
+  const selectedAddress = useSelector(
+    (state) => state.userOrderSlice.selectedAddress
+  );
 
   // On Click Change Address Btn
   const onClickChangeAddress = () => {
@@ -18,7 +23,7 @@ function DelivaryAddress(props) {
           form <span>Kolkata Local</span>
         </p>
         <p className="formTo">
-          to <span>New Town</span>
+          to <span>{selectedAddress ? selectedAddress.city : ""}</span>
         </p>
 
         <p className="deliveryTime">

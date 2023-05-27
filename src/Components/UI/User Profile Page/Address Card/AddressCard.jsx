@@ -3,6 +3,7 @@ import "./AddressCard.css";
 import AddressAddEdit from "../Address AddEdit/AddressAddEdit";
 import { useDispatch } from "react-redux";
 import { removeAddress } from "../../../../Store/Actions/userAddressActions";
+import { setSelectedAddress } from "../../../../Store/Reducer/userOrderReducer";
 
 function AddressCard(props) {
   const dispatch = useDispatch();
@@ -18,11 +19,21 @@ function AddressCard(props) {
     dispatch(removeAddress(props.data.addressId));
   };
 
+  // On Choose Address
+  const onAddressChoose = () => {
+    dispatch(setSelectedAddress(props.data));
+  };
+
   return (
     <>
       <div className=" AddressCard-div ">
         <div>
-          <input type="radio" name="address_radio" id="" />
+          <input
+            onClick={onAddressChoose}
+            type="radio"
+            name="address_radio"
+            id=""
+          />
         </div>
         <div className="AddressCard-div__container">
           <div className="AddressCard-div__NameContainer">
