@@ -12,9 +12,12 @@ const userOrderReducer = createSlice({
         },
         setSubscription: (state, action) => {
             state.subscription = action.payload
+        },
+        removeSubscription: (state, action) => {
+            state.subscription = { from: "", to: "" }
         }
     }
 })
 
-export const { setSubscription, setSelectedAddress } = userOrderReducer.actions
+export const { setSubscription, setSelectedAddress, removeSubscription } = userOrderReducer.actions
 export default userOrderReducer

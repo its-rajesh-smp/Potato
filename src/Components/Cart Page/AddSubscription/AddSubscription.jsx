@@ -1,14 +1,28 @@
 import React, { useState } from "react";
 import "./AddSubscription.css";
+import { useDispatch } from "react-redux";
+import {
+  removeSubscription,
+  setSubscription,
+} from "../../../Store/Reducer/userOrderReducer";
 
 function AddSubscription(props) {
   const [start, setStart] = useState("");
   const [end, setEnd] = useState("");
   const [subsPrice, setSubsPrice] = useState(0);
+  const dispatch = useDispatch();
 
   // Calculate Subscription
   const onClickCalculate = () => {
     setSubsPrice(250);
+    dispatch(setSubscription({ from: start, to: end }));
+  };
+
+  // On Click Cancle
+  const onClickCancle = () => {
+    dispatch(removeSubscription());
+    setStart("");
+    setEnd("");
   };
 
   return (
@@ -33,6 +47,7 @@ function AddSubscription(props) {
             onChange={(e) => {
               setStart(e.target.value);
             }}
+            value={start}
             type="date"
             name=""
             id="startingDate"
@@ -41,6 +56,7 @@ function AddSubscription(props) {
             onChange={(e) => {
               setEnd(e.target.value);
             }}
+            value={end}
             type="date"
             name=""
             id="endingDate"
@@ -48,7 +64,7 @@ function AddSubscription(props) {
         </div>
         <div className="btnDiv">
           <button onClick={onClickCalculate}>CALCULATE</button>
-          <button>CANCLE</button>
+          <button onClick={onClickCancle}>CANCLE</button>
         </div>
       </div>
     </div>
