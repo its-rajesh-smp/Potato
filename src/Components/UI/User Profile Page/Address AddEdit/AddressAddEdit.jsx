@@ -1,19 +1,29 @@
 import React, { useState } from "react";
 import "./AddressAddEdit.css";
 import { useDispatch } from "react-redux";
-import { addNewAddress } from "../../../../Store/Actions/userAddressActions";
+import {
+  addNewAddress,
+  editAddress,
+} from "../../../../Store/Actions/userAddressActions";
 
 function AddressAddEdit(props) {
   const dispatch = useDispatch();
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [landmark, setLandmark] = useState("");
-  const [city, setCity] = useState("");
-  const [district, setDistrict] = useState("");
-  const [state, setState] = useState("");
-  const [pincode, setPincode] = useState("");
 
-  // On Click Add Address
+  const [name, setName] = useState(props.data ? props.data.name : "");
+  const [phone, setPhone] = useState(props.data ? props.data.phone : "");
+  const [landmark, setLandmark] = useState(
+    props.data ? props.data.landmark : ""
+  );
+  const [city, setCity] = useState(props.data ? props.data.city : "");
+  const [district, setDistrict] = useState(
+    props.data ? props.data.district : ""
+  );
+  const [state, setState] = useState(props.data ? props.data.state : "");
+  const [pincode, setPincode] = useState(props.data ? props.data.pincode : "");
+
+  /* -------------------------------------------------------------------------- */
+  /*                            On Click Add Address                            */
+  /* -------------------------------------------------------------------------- */
   const onSaveBtnClickHandeler = (e) => {
     e.preventDefault();
     const newAddressObj = {
@@ -28,6 +38,22 @@ function AddressAddEdit(props) {
     dispatch(addNewAddress(newAddressObj));
   };
 
+  /* -------------------------------------------------------------------------- */
+  /*                              On Edit Btn Click                             */
+  /* -------------------------------------------------------------------------- */
+  const onEditBtnClickHandeler = (e) => {
+    e.preventDefault();
+    const newAddressObj = {
+      name: name,
+      phone: phone,
+      landmark: landmark,
+      city: city,
+      district: district,
+      state: state,
+      pincode: pincode,
+    };
+    dispatch(editAddress(newAddressObj, props.data.addressId));
+  };
   return (
     <form className=" AddressAddEdit-div ">
       <div>
@@ -92,7 +118,8 @@ function AddressAddEdit(props) {
           id=""
         />
       </div>
-      <button onClick={onSaveBtnClickHandeler}>SAVE</button>
+      {!props.edit && <button onClick={onSaveBtnClickHandeler}>ADD</button>}
+      {props.edit && <button onClick={onEditBtnClickHandeler}>SAVE</button>}
     </form>
   );
 }

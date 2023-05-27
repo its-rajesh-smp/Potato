@@ -3,6 +3,16 @@ import "./AddressCard.css";
 import AddressAddEdit from "../Address AddEdit/AddressAddEdit";
 
 function AddressCard(props) {
+  const [toggleEdit, setToggleEdit] = useState(false);
+
+  //On Click Edit Btn
+  const onEditBtnClick = () => {
+    setToggleEdit((p) => !p);
+  };
+
+  //On Delete Btn Click
+  const onDeleteBtnClick = () => {};
+
   return (
     <>
       <div className=" AddressCard-div ">
@@ -15,8 +25,8 @@ function AddressCard(props) {
               <p>{props.data.name}</p>
               <p>{props.data.phone}</p>
             </div>
-            <i className="bx bxs-edit-alt"></i>
-            <p>X</p>
+            <i onClick={onEditBtnClick} className="bx bxs-edit-alt"></i>
+            <p onClick={onDeleteBtnClick}>X</p>
           </div>
           <div className="AddressCard-div__addressContainer">
             <p>{props.data.locality}</p>
@@ -28,7 +38,7 @@ function AddressCard(props) {
         </div>
       </div>
 
-      {/* <AddressAddEdit /> */}
+      {toggleEdit && <AddressAddEdit data={props.data} edit={true} />}
     </>
   );
 }

@@ -12,3 +12,16 @@ export const addNewAddress = (addressData) => {
         }
     }
 }
+
+
+export const editAddress = (addressData, addressId) => {
+    return async (dispatch, getState) => {
+        const userEmail = getState().authSlice.userDetails.email.replace(".", "").replace("@", "")
+        try {
+            const { data } = await axios.patch(`${USERS}/${userEmail}/address/${addressId}.json`, addressData)
+            console.log(data);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
