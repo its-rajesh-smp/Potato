@@ -1,7 +1,20 @@
+@import "../../../Styles/color";
 .UserAddress-div {
   background-color: white;
-  padding: 10px;
+  padding: torem(10px);
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: torem(5px);
+  font-family: poppins;
+  margin-bottom: torem(5px);
+  border-bottom: 1px solid rgb(188, 188, 188);
+  button {
+    padding: torem(10px);
+    background-color: $myblue;
+    font-size: torem(14px);
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-family: poppins;
+  }
 }

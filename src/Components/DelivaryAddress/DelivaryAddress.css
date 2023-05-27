@@ -4,6 +4,7 @@
   margin-bottom: 0.3125rem;
   padding: 0.625rem 0.625rem;
   border-bottom: 1px solid #939393;
+  position: relative;
 }
 .DelivaryAddress-div h3 {
   margin-bottom: 0.3125rem;
@@ -20,4 +21,15 @@
 }
 .DelivaryAddress-div .deliveryTime span {
   font-weight: 600;
+}
+.DelivaryAddress-div button {
+  position: absolute;
+  right: 0.625rem;
+  bottom: 0.625rem;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-family: poppins;
+  padding: 0.625rem;
 }/*# sourceMappingURL=DelivaryAddress.css.map */

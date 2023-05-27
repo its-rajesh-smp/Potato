@@ -1,7 +1,19 @@
 .UserAddress-div {
   background-color: white;
-  padding: 10px;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.3125rem;
+  font-family: poppins;
+  margin-bottom: 0.3125rem;
+  border-bottom: 1px solid rgb(188, 188, 188);
+}
+.UserAddress-div button {
+  padding: 0.625rem;
+  background-color: #1877f2;
+  font-size: 0.875rem;
+  color: white;
+  font-weight: 600;
+  border: none;
+  font-family: poppins;
 }/*# sourceMappingURL=UserAddress.css.map */
