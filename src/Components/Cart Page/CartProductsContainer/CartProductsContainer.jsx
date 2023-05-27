@@ -1,16 +1,18 @@
 import React from "react";
 import "./CartProductsContainer.css";
 import CartItem from "../../UI/Cart Page/CartItem/CartItem";
+import { useSelector } from "react-redux";
 
 function CartProductsContainer(props) {
+  const cartItem = Object.values(
+    useSelector((state) => state.userCartSlice.cart)
+  );
+
   return (
     <div className=" CartProductsContainer-div ">
-      <CartItem
-        name={"CHICKEN"}
-        price={299}
-        quantity={30}
-        key={Math.random()}
-      />
+      {cartItem.map((product) => {
+        return <CartItem data={product} key={product.cartId} />;
+      })}
     </div>
   );
 }
