@@ -40,9 +40,7 @@ function CartPage(props) {
         />
         <CartProductsContainer cartItem={cartItem} />
         <BillDetails />
-        <PaymentMethodContainer>
-
-        </PaymentMethodContainer>
+        <PaymentMethodContainer />
         <button onClick={onClickOrder} className="checkOutBtn">ORDER</button>
       </div>
       : <OrderSuccessPage setCartPage={setCartPage} />

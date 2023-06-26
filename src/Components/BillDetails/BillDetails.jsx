@@ -1,12 +1,15 @@
 import React from "react";
 import "./BillDetails.css";
+import { useSelector } from "react-redux";
 
 function BillDetails() {
-  const totalCTX = 0;
-  const totalPrice = 0;
+
+  const totalDetails = useSelector(state => state.totalCartSlice.cartTotal)
+  const subscription = useSelector(state => state.userSubscriptionSlice.subscription)
+  const totalPrice = totalDetails.totalAmount * totalDetails.totalQuantity;
   const discount = 0;
-  const tax = 0;
-  const finalPrice = 0;
+  const tax = 49;
+  const finalPrice = (totalPrice - discount) + tax;
 
   return (
     <div className="BillDetails-div">
@@ -26,12 +29,16 @@ function BillDetails() {
         </p>
       </div>
 
-      <div className="offer">
+      <div>
+        <p>Subscription  <span>{subscription.start} to {subscription.end} </span> </p>
+      </div>
+
+      {discount !== 0 && <div className="offer">
         <p>Offer</p>
         <p>
           ₹<span>{discount}</span>
         </p>
-      </div>
+      </div>}
 
       <div className="total">
         <p>Bill total</p>
@@ -39,6 +46,9 @@ function BillDetails() {
           ₹<span>{finalPrice}</span>
         </p>
       </div>
+
+
+
     </div>
   );
 }
