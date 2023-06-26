@@ -7,8 +7,6 @@ function ProductContainer(props) {
   const products = useSelector((state) => state.productSlice.products);
   const cartItems = useSelector((state) => state.userCartSlice.cart);
 
-  console.log(props.filterParam.trim());
-
 
 
   return (
