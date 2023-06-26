@@ -7,6 +7,18 @@
   justify-content: space-between;
   width: 100%;
 
+  div {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: poppins;
+    gap: 5px;
+
+    img {
+      width: 40px;
+    }
+  }
+
   i {
     color: white;
     font-size: torem(50px);

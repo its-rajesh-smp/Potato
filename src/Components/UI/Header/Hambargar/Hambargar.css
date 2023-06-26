@@ -5,6 +5,16 @@
   justify-content: space-between;
   width: 100%;
 }
+.Hambargar-div div {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: poppins;
+  gap: 5px;
+}
+.Hambargar-div div img {
+  width: 40px;
+}
 .Hambargar-div i {
   color: white;
   font-size: 3.125rem;
