@@ -6,26 +6,31 @@ import CartProductsContainer from "../../Components/Cart Page/CartProductsContai
 import AddSubscription from "../../Components/Cart Page/AddSubscription/AddSubscription";
 import OffersContainer from "../../Components/Offers Container/OffersContainer";
 import PaymentMethodContainer from "../../Components/Cart Page/Payment Method Container/PaymentMethodContainer";
+import OrderSuccessPage from "../OrderSuccessPage/OrderSuccessPage";
 
 function CartPage(props) {
-  const onClickCheckout = () => {
+  const [cartPage, setCartPage] = useState(true)
 
+  const onClickOrder = () => {
+    setCartPage(false)
   }
 
   return (
-    <div className=" CartPage-div ">
-      <DelivaryAddress />
-      <AddSubscription />
-      <OffersContainer
-        style={{ border: "none", borderBottom: "1px solid rgb(174, 174, 174)" }}
-      />
-      <CartProductsContainer />
-      <BillDetails />
-      <PaymentMethodContainer>
+    cartPage ?
+      <div className=" CartPage-div ">
+        <DelivaryAddress />
+        <AddSubscription />
+        <OffersContainer
+          style={{ border: "none", borderBottom: "1px solid rgb(174, 174, 174)" }}
+        />
+        <CartProductsContainer />
+        <BillDetails />
+        <PaymentMethodContainer>
 
-      </PaymentMethodContainer>
-      <button className="checkOutBtn">CHECKOUT</button>
-    </div>
+        </PaymentMethodContainer>
+        <button onClick={onClickOrder} className="checkOutBtn">ORDER</button>
+      </div>
+      : <OrderSuccessPage setCartPage={setCartPage} />
   );
 }
 

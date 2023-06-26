@@ -12,6 +12,10 @@ import MyOrderPage from "../Pages/MyOrderPage/MyOrderPage";
 
 function MyRoutes(props) {
   const isAuth = useSelector((state) => state.authSlice.isAuth);
+
+
+
+
   return (
     <Routes>
       {isAuth ? (
