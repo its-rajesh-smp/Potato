@@ -17,7 +17,7 @@ function AddAddressBtn(props) {
         Add Address
       </button>
 
-      {showAddEdit && <AddressAddEdit />}
+      {showAddEdit && <AddressAddEdit setToggleEdit={setShowAddEdit} />}
     </div>
   );
 }
