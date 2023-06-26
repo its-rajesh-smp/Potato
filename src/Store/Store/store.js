@@ -6,6 +6,7 @@ import userCartReducer from "../Reducer/userCartReducer";
 import totalCartReducer from "../Reducer/totalCartReducer";
 import userAddressReducer from "../Reducer/userAddressReducer";
 import userSubscriptionReducer from "../Reducer/userSubscriptionReducer";
+import userOrderReducer from "../Reducer/userOrderReducer";
 
 const store = configureStore({
   reducer: {
@@ -16,6 +17,7 @@ const store = configureStore({
     totalCartSlice: totalCartReducer.reducer,
     userAddressSlice: userAddressReducer.reducer,
     userSubscriptionSlice: userSubscriptionReducer.reducer,
+    userOrderSlice: userOrderReducer.reducer,
   },
 });
 

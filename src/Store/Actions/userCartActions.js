@@ -53,6 +53,7 @@ export const removeFromCart = (product, quantity) => {
       const userEmail = getState()
         .authSlice.userDetails.email.replace(".", "")
         .replace("@", "");
+
       const currentPrducts = JSON.parse(
         JSON.stringify(getState().userCartSlice.cart)
       );

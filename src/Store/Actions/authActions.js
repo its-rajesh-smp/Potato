@@ -4,6 +4,7 @@ import { createUser, fetchUser, loginUser } from "../Reducer/authReducer";
 import { setToCart } from "../Reducer/userCartReducer";
 import { setTotal } from "../Reducer/totalCartReducer";
 import { fetchAddress } from "../Reducer/userAddressReducer";
+import { setOrders } from "../Reducer/userOrderReducer";
 
 /* -------------------------------------------------------------------------- */
 /*                                 CREATE USER                                */
@@ -60,14 +61,22 @@ export const fetchExistingUser = (setLoading) => {
       let totalAmount = 0;
       let totalQuantity = 0;
       const cartData = userData.cart;
-      Object.keys(cartData).forEach((cartId) => {
-        totalQuantity += cartData[cartId].quantity;
-        totalAmount += cartData[cartId].quantity * cartData[cartId].price;
-        newCartData[cartData[cartId].id] = {
-          ...cartData[cartId],
-          cartId: cartId,
-        };
-      });
+      if (cartData) {
+        Object.keys(cartData).forEach((cartId) => {
+          totalQuantity += cartData[cartId].quantity;
+          totalAmount += cartData[cartId].quantity * cartData[cartId].price;
+          newCartData[cartData[cartId].id] = {
+            ...cartData[cartId],
+            cartId: cartId,
+          };
+        });
+      }
+
+      // Forming Order Array
+      let orderArray = [];
+      if (userData.order) {
+        orderArray = Object.values(userData.order);
+      }
 
       /* -------------------------------------------------------------------------- */
       /*                                  DISPATCH                                  */
@@ -77,6 +86,7 @@ export const fetchExistingUser = (setLoading) => {
         setTotal({ totalAmount: totalAmount, totalQuantity: totalQuantity })
       );
       dispatch(fetchAddress(userAddress));
+      dispatch(setOrders(orderArray));
       dispatch(fetchUser({ ...authData.users[0], idToken: localIdToken }));
     } catch (error) {
       console.log(error);
@@ -112,14 +122,22 @@ export const loginExistingUser = (enteredInput, setLoading) => {
       let totalAmount = 0;
       let totalQuantity = 0;
       const cartData = userData.cart;
-      Object.keys(cartData).forEach((cartId) => {
-        totalQuantity += cartData[cartId].quantity;
-        totalAmount += cartData[cartId].quantity * cartData[cartId].price;
-        newCartData[cartData[cartId].id] = {
-          ...cartData[cartId],
-          cartId: cartId,
-        };
-      });
+      if (cartData) {
+        Object.keys(cartData).forEach((cartId) => {
+          totalQuantity += cartData[cartId].quantity;
+          totalAmount += cartData[cartId].quantity * cartData[cartId].price;
+          newCartData[cartData[cartId].id] = {
+            ...cartData[cartId],
+            cartId: cartId,
+          };
+        });
+      }
+
+      // Forming Order Array
+      let orderArray = [];
+      if (userData.order) {
+        orderArray = Object.values(userData.order);
+      }
 
       /* -------------------------------------------------------------------------- */
       /*                                  DISPATCH                                  */
@@ -129,7 +147,7 @@ export const loginExistingUser = (enteredInput, setLoading) => {
         setTotal({ totalAmount: totalAmount, totalQuantity: totalQuantity })
       );
       dispatch(fetchAddress(userAddress));
-
+      dispatch(setOrders(orderArray));
       dispatch(loginUser({ ...authData, ...userData }));
     } catch (error) {
       console.log(error);

@@ -21,12 +21,15 @@ export const createOrder = () => {
         orderAddress: selectedAddress,
         orderSubscription: selectedSubscription,
         orderTotal: totalCart,
+        orderStatus: "PENDING",
       };
       const { data } = axios.patch(`${USERS}/${userEmail}/order.json`, {
         [orderId]: userOrderObj,
       });
 
-      console.log(data);
-    } catch (error) {}
+      axios.delete(`${USERS}/${userEmail}/cart.json`);
+    } catch (error) {
+      console.log(error);
+    }
   };
 };

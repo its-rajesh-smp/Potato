@@ -1,26 +1,31 @@
 .Order-div {
-  padding: 10px;
+  padding: 0.625rem;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .Order-div .Order-div__imgContainer {
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
   font-weight: 600;
 }
 .Order-div .Order-div__imgContainer img {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .Order-div progress {
   width: 50%;
 }
 .Order-div .Order-div__priceContainer {
   text-align: end;
+}
+
+.orderDetails {
+  font-size: 0.75rem;
+  font-weight: 400;
 }/*# sourceMappingURL=Order.css.map */
