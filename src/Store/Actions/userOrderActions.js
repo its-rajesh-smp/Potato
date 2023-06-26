@@ -1,3 +1,6 @@
+import axios from "axios";
+import { USERS } from "../../Firebase/API_URL";
+
 export const createOrder = () => {
   return async (dispatch, getState) => {
     try {
@@ -11,16 +14,19 @@ export const createOrder = () => {
 
       const totalCart = getState().totalCartSlice.cartTotal;
 
+      let orderId = new Date().getTime();
       const userOrderObj = {
-        orderId: new Date().getTime(),
+        orderId: orderId,
         orderItem: Object.values(userCart),
         orderAddress: selectedAddress,
         orderSubscription: selectedSubscription,
         orderTotal: totalCart,
       };
+      const { data } = axios.patch(`${USERS}/${userEmail}/order.json`, {
+        [orderId]: userOrderObj,
+      });
 
-      console.log(userOrderObj);
-      // const {data}=
+      console.log(data);
     } catch (error) {}
   };
 };
