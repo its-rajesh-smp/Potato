@@ -8,22 +8,17 @@ import { ShowOnMobile } from "../../Styles/media";
 function Header(props) {
 
   const navigate = useNavigate()
-  const [showBack, setShowBack] = useState(false)
+
   const [hambargar, setHambargar] = useState(false)
 
   const onClickUserIcon = () => {
     navigate("/user")
-    setShowBack(true)
+
   }
 
-  const onClickBack = () => {
-    navigate(-1)
-    setShowBack(false)
-  }
 
   const onClickBrand = () => {
     navigate("/")
-    setShowBack(false)
   }
 
   const openCloseHambargar = () => {
@@ -34,7 +29,7 @@ function Header(props) {
 
   return (
     <div className=" Header-div">
-      <Hambargar openCloseHambargar={openCloseHambargar} onClickBrand={onClickBrand} onClickBack={onClickBack} showBack={showBack} onClickUserIcon={onClickUserIcon} />
+      <Hambargar openCloseHambargar={openCloseHambargar} onClickBrand={onClickBrand} onClickUserIcon={onClickUserIcon} />
       <ShowOnMobile>
         {hambargar && <HambargarContainer />}
       </ShowOnMobile>
