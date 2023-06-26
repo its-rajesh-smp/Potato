@@ -1,6 +1,6 @@
 import React from "react";
 import "./PaymentMethodContainer.css";
-import PaymentMethod from "../../UI/Checkout Page/Payment Method/PaymentMethod";
+import PaymentMethod from "../Payment Method/PaymentMethod";
 
 function PaymentMethodContainer(props) {
   return (
