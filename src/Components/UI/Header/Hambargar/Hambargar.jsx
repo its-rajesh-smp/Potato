@@ -5,7 +5,7 @@ function Hambargar(props) {
 
   return (
     <div className=" Hambargar-div ">
-      <i className="bx bx-menu"></i>
+      <i onClick={props.openCloseHambargar} className="bx bx-menu"></i>
       <div onClick={props.onClickBrand}>
         <img src="https://cdn-icons-png.flaticon.com/512/1784/1784170.png" alt="" />
         <h1>Potato</h1>
