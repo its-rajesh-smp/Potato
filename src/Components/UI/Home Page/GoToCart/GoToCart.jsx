@@ -15,7 +15,8 @@ function GoToCart(props) {
   };
 
   return (
-    <div className=" GoToCart-div App-div ">
+    cartTotal.totalQuantity !== 0 &&
+    < div className=" GoToCart-div App-div " >
       <button onClick={onCartBtnClickHandeler} className="GoToCart-div-button">
         <div className="GoToCart-div-button-CartPrice">
           <p>
@@ -33,7 +34,7 @@ function GoToCart(props) {
           <i className="bx bxs-right-arrow"></i>
         </div>
       </button>
-    </div>
+    </div >
   );
 }
 
