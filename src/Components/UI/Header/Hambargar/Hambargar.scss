@@ -1,7 +1,7 @@
 @import "../../../../Styles/color";
 
 .Hambargar-div {
-  padding: 0px 5px;
+  padding: 0px torem(5px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,10 +12,10 @@
     align-items: center;
     color: white;
     font-family: poppins;
-    gap: 5px;
+    gap: torem(5px);
 
     img {
-      width: 40px;
+      width: torem(40px);
     }
   }
 

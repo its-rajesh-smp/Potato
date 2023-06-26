@@ -1,5 +1,5 @@
 .Hambargar-div {
-  padding: 0px 5px;
+  padding: 0px 0.3125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,10 +10,10 @@
   align-items: center;
   color: white;
   font-family: poppins;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .Hambargar-div div img {
-  width: 40px;
+  width: 2.5rem;
 }
 .Hambargar-div i {
   color: white;
