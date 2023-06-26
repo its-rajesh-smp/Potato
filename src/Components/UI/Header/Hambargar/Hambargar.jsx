@@ -2,10 +2,11 @@ import React from "react";
 import "./Hambargar.css";
 
 function Hambargar(props) {
+
   return (
     <div className=" Hambargar-div ">
       <i className="bx bx-menu"></i>
-      <div>
+      <div onClick={props.onClickBrand}>
         <img src="https://cdn-icons-png.flaticon.com/512/1784/1784170.png" alt="" />
         <h1>Potato</h1>
       </div>

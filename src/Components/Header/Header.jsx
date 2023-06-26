@@ -19,10 +19,15 @@ function Header(props) {
     setShowBack(false)
   }
 
+  const onClickBrand = () => {
+    navigate("/")
+    setShowBack(false)
+  }
+
 
   return (
     <div className=" Header-div">
-      <Hambargar onClickBack={onClickBack} showBack={showBack} onClickUserIcon={onClickUserIcon} />
+      <Hambargar onClickBrand={onClickBrand} onClickBack={onClickBack} showBack={showBack} onClickUserIcon={onClickUserIcon} />
       {/* <HambargarContainer /> */}
     </div>
   );
