@@ -1,0 +1,19 @@
+@import "../../../../Styles/color";
+
+.NothingToShow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    font-family: poppins;
+
+    img {
+        width: torem(50px);
+    }
+
+    h1 {
+        text-transform: capitalize;
+        font-size: torem(20px);
+    }
+}

@@ -1,0 +1,15 @@
+.NothingToShow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  font-family: poppins;
+}
+.NothingToShow img {
+  width: 3.125rem;
+}
+.NothingToShow h1 {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}/*# sourceMappingURL=NothingToShow.css.map */
