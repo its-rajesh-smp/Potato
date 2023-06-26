@@ -24,9 +24,9 @@ function ProductPhotoBtn(props) {
 
   return (
     <div className="ProductPhotoBtn-div-button">
-      <button onClick={decreamentCartQuantity}>-</button>
-      <p style={{ cursor: "pointer" }}>{props.quantity}</p>
-      <button onClick={increamentCartQuantity}>+</button>
+      {props.quantity !== 0 && <button onClick={decreamentCartQuantity}>-</button>}
+      {props.quantity === 0 ? <p onClick={increamentCartQuantity}>ADD</p> : <p style={{ cursor: "pointer" }}>{props.quantity}</p>}
+      {props.quantity !== 0 && <button onClick={increamentCartQuantity}>+</button>}
     </div>
   );
 }
