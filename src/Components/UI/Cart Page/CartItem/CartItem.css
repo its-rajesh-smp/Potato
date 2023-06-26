@@ -5,6 +5,7 @@
   margin-bottom: 0.625rem;
 }
 .CartItem-div .CartItem-div-item {
+  height: -moz-min-content;
   height: min-content;
   display: flex;
   gap: 0.3125rem;

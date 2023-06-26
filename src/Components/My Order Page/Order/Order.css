@@ -14,7 +14,8 @@
 .Order-div .Order-div__imgContainer img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .Order-div progress {

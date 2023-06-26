@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["VegNonVegFilter.scss"],"names":[],"mappings":"AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA","file":"VegNonVegFilter.css"}
+{"version":3,"sources":["VegNonVegFilter.scss","VegNonVegFilter.css"],"names":[],"mappings":"AACA;EACE,WAAA;EACA,iBAAA;EACA,uBAAA;EACA,qBAAA;EACA,aAAA;EACA,mBAAA;EACA,kBAAA;EACA,sBAAA;ACAF","file":"VegNonVegFilter.css"}

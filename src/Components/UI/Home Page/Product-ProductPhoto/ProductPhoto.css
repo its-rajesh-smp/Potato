@@ -16,5 +16,6 @@
   border-radius: 0.625rem;
   height: 6.875rem;
   width: 6.875rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=ProductPhoto.css.map */
