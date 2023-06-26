@@ -3,14 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 const userSubscriptionReducer = createSlice({
   name: "subscription",
   initialState: {
-    subscription: { from: "", to: "", totalDate: 0 },
+    subscription: { from: "", to: "" },
   },
   reducers: {
     setSubscription: (state, action) => {
       state.subscription = action.payload;
     },
     removeSubscription: (state, action) => {
-      state.subscription = { from: "", to: "", totalDate: 0 };
+      state.subscription = { from: "", to: "" };
     },
   },
 });

@@ -16,9 +16,17 @@ const userAddressReducer = createSlice({
     setSelectedAddress: (state, action) => {
       state.selectedAddress = action.payload;
     },
+    clearSelectedAddress: (state) => {
+      state.selectedAddress = {};
+    },
   },
 });
 
-export const { fetchAddress, addAddress, setAddress, setSelectedAddress } =
-  userAddressReducer.actions;
+export const {
+  fetchAddress,
+  addAddress,
+  setAddress,
+  setSelectedAddress,
+  clearSelectedAddress,
+} = userAddressReducer.actions;
 export default userAddressReducer;

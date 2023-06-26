@@ -1,5 +1,10 @@
 import axios from "axios";
 import { USERS } from "../../Firebase/API_URL";
+import { addOrder } from "../Reducer/userOrderReducer";
+import { removeSubscription } from "../Reducer/userSubscriptionReducer";
+import { clearCart } from "../Reducer/userCartReducer";
+import { clearSelectedAddress } from "../Reducer/userAddressReducer";
+import { clearTotal } from "../Reducer/totalCartReducer";
 
 export const createOrder = () => {
   return async (dispatch, getState) => {
@@ -26,6 +31,12 @@ export const createOrder = () => {
       const { data } = axios.patch(`${USERS}/${userEmail}/order.json`, {
         [orderId]: userOrderObj,
       });
+
+      dispatch(addOrder(userOrderObj));
+      dispatch(removeSubscription());
+      dispatch(clearCart());
+      dispatch(clearSelectedAddress());
+      dispatch(clearTotal());
 
       axios.delete(`${USERS}/${userEmail}/cart.json`);
     } catch (error) {
