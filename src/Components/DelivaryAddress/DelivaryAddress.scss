@@ -1,4 +1,5 @@
 @import "../../Styles/color";
+
 .DelivaryAddress-div {
   font-family: poppins;
   background-color: white;
@@ -6,26 +7,30 @@
   padding: torem(10px) torem(10px);
   border-bottom: 1px solid #939393;
   position: relative;
+
   h3 {
     margin-bottom: torem(5px);
   }
+
   .formTo {
     font-size: torem(12px);
+
     span {
       font-weight: 600;
     }
   }
+
   .deliveryTime {
     margin-top: torem(10px);
     font-size: torem(11px);
+
     span {
       font-weight: 600;
     }
   }
+
   button {
-    position: absolute;
-    right: torem(10px);
-    bottom: torem(10px);
+    margin-top: torem(10px);
     background-color: $myblue;
     color: white;
     border: none;

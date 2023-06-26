@@ -12,7 +12,7 @@
 }
 .AddressCard-div .AddressCard-div__container .AddressCard-div__NameContainer {
   display: flex;
-  align-items: first baseline;
+  align-items: center;
   gap: 0.625rem;
 }
 .AddressCard-div .AddressCard-div__container .AddressCard-div__NameContainer i {

@@ -23,9 +23,7 @@
   font-weight: 600;
 }
 .DelivaryAddress-div button {
-  position: absolute;
-  right: 0.625rem;
-  bottom: 0.625rem;
+  margin-top: 0.625rem;
   background-color: #1877f2;
   color: white;
   border: none;

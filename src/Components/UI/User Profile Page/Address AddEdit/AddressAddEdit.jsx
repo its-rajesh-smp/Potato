@@ -36,6 +36,7 @@ function AddressAddEdit(props) {
       pincode: pincode,
     };
     dispatch(addNewAddress(newAddressObj));
+    props.onEditBtnClick()
   };
 
   /* -------------------------------------------------------------------------- */
@@ -53,6 +54,7 @@ function AddressAddEdit(props) {
       pincode: pincode,
     };
     dispatch(editAddress(newAddressObj, props.data.addressId));
+    props.onEditBtnClick()
   };
   return (
     <form className=" AddressAddEdit-div ">

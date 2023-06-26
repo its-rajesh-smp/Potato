@@ -18,11 +18,14 @@ function CartPage(props) {
     useSelector((state) => state.userCartSlice.cart)
   );
 
+  const showOrderSuccess = () => {
+    setCartPage(false)
+  }
 
 
   const onClickOrder = () => {
-    setCartPage(false)
-    dispatch(createOrder())
+    dispatch(createOrder(showOrderSuccess))
+
   }
 
   // Showing Nothing Component on Cart 0

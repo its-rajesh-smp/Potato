@@ -6,7 +6,7 @@ import { clearCart } from "../Reducer/userCartReducer";
 import { clearSelectedAddress } from "../Reducer/userAddressReducer";
 import { clearTotal } from "../Reducer/totalCartReducer";
 
-export const createOrder = () => {
+export const createOrder = (showOrderSuccess) => {
   return async (dispatch, getState) => {
     try {
       const userEmail = getState()
@@ -18,6 +18,12 @@ export const createOrder = () => {
         getState().userSubscriptionSlice.subscription;
 
       const totalCart = getState().totalCartSlice.cartTotal;
+
+      // Checking For Empty Field
+      if (Object.keys(selectedAddress).length === 0) {
+        alert("NO ADDRESS CHOOSED");
+        return;
+      }
 
       let orderId = new Date().getTime();
       const userOrderObj = {
@@ -31,14 +37,11 @@ export const createOrder = () => {
       const { data } = axios.patch(`${USERS}/${userEmail}/order.json`, {
         [orderId]: userOrderObj,
       });
+      axios.delete(`${USERS}/${userEmail}/cart.json`);
+
+      showOrderSuccess();
 
       dispatch(addOrder(userOrderObj));
-      dispatch(removeSubscription());
-      dispatch(clearCart());
-      dispatch(clearSelectedAddress());
-      dispatch(clearTotal());
-
-      axios.delete(`${USERS}/${userEmail}/cart.json`);
     } catch (error) {
       console.log(error);
     }

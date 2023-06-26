@@ -55,7 +55,7 @@ function AddressCard(props) {
         </div>
       </div>
 
-      {toggleEdit && <AddressAddEdit data={props.data} edit={true} />}
+      {toggleEdit && <AddressAddEdit onEditBtnClick={onEditBtnClick} data={props.data} edit={true} />}
     </>
   );
 }
