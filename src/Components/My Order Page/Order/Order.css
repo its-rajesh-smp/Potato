@@ -1,9 +1,9 @@
 .Order-div {
   padding: 0.625rem;
   box-sizing: border-box;
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 0.3fr;
   justify-content: space-between;
-  align-items: center;
   border-radius: 0.625rem;
 }
 .Order-div .Order-div__imgContainer {
@@ -28,4 +28,8 @@
 .orderDetails {
   font-size: 0.75rem;
   font-weight: 400;
+}
+
+.Order-div__center {
+  font-size: 12px;
 }/*# sourceMappingURL=Order.css.map */

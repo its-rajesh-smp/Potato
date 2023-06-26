@@ -3,9 +3,9 @@
 .Order-div {
   padding: torem(10px);
   box-sizing: border-box;
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 0.3fr;
   justify-content: space-between;
-  align-items: center;
   border-radius: torem(10px);
 
   .Order-div__imgContainer {
@@ -33,5 +33,9 @@
 .orderDetails {
   font-size: torem(12px);
   font-weight: 400;
+}
+
+.Order-div__center {
+  font-size: 12px;
 
 }

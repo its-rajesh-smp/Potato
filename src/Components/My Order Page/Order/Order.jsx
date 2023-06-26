@@ -31,6 +31,13 @@ function Order(props) {
 
       </div>
 
+      <div className="Order-div__center">
+        <p>{props.address.name}</p>
+        <p>{props.address.phone}</p>
+        <p>{props.address.city} - {props.address.landmark}</p>
+        <p>{props.status}</p>
+      </div>
+
 
 
       <div className="Order-div__priceContainer">

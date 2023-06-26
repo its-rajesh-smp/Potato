@@ -8,7 +8,7 @@ function OrderContainer(props) {
       <h3>{props.name} Orders</h3>
       {props.data.map((packet) => {
         return packet.orderItem.map((order) => {
-          return <Order data={order} status={packet.orderStatus} subscription={packet.orderSubscription} key={`${packet.orderId}-${order.id} `} id={`${packet.orderId}-${order.id} `} />
+          return <Order address={packet.orderAddress} data={order} status={packet.orderStatus} subscription={packet.orderSubscription} key={`${packet.orderId}-${order.id} `} id={`${packet.orderId}-${order.id} `} />
         })
       }).reverse()}
     </div>
