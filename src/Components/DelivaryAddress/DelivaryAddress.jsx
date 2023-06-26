@@ -7,7 +7,7 @@ function DelivaryAddress(props) {
   const [showAllAddress, setShowAllAddress] = useState(false);
 
   const selectedAddress = useSelector(
-    (state) => state.userOrderSlice.selectedAddress
+    (state) => state.userAddressSlice.selectedAddress
   );
 
   // On Click Change Address Btn

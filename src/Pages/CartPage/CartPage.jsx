@@ -7,12 +7,16 @@ import AddSubscription from "../../Components/Cart Page/AddSubscription/AddSubsc
 import OffersContainer from "../../Components/Offers Container/OffersContainer";
 import PaymentMethodContainer from "../../Components/Cart Page/Payment Method Container/PaymentMethodContainer";
 import OrderSuccessPage from "../OrderSuccessPage/OrderSuccessPage";
+import { useDispatch } from "react-redux";
+import { createOrder } from "../../Store/Actions/userOrderActions";
 
 function CartPage(props) {
   const [cartPage, setCartPage] = useState(true)
+  const dispatch = useDispatch()
 
   const onClickOrder = () => {
-    setCartPage(false)
+    // setCartPage(false)
+    dispatch(createOrder())
   }
 
   return (

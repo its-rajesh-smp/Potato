@@ -3,7 +3,8 @@ import "./AddressCard.css";
 import AddressAddEdit from "../Address AddEdit/AddressAddEdit";
 import { useDispatch } from "react-redux";
 import { removeAddress } from "../../../../Store/Actions/userAddressActions";
-import { setSelectedAddress } from "../../../../Store/Reducer/userOrderReducer";
+import { setSelectedAddress } from "../../../../Store/Reducer/userAddressReducer";
+
 
 function AddressCard(props) {
   const dispatch = useDispatch();

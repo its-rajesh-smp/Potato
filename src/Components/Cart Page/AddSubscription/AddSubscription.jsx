@@ -1,29 +1,35 @@
 import React, { useState } from "react";
 import "./AddSubscription.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   removeSubscription,
   setSubscription,
-} from "../../../Store/Reducer/userOrderReducer";
+} from "../../../Store/Reducer/userSubscriptionReducer";
 
 function AddSubscription(props) {
-  const [start, setStart] = useState("");
-  const [end, setEnd] = useState("");
-  const [subsPrice, setSubsPrice] = useState(0);
-  const dispatch = useDispatch();
+  const [start, setStart] = useState(new Date().toISOString().substring(0, 10));
+  const [end, setEnd] = useState(new Date().toISOString().substring(0, 10));
 
-  // Calculate Subscription
-  const onClickCalculate = () => {
-    setSubsPrice(250);
-    dispatch(setSubscription({ from: start, to: end }));
-  };
+  const dispatch = useDispatch();
+  const totalCartPrice = useSelector(state => state.totalCartSlice.cartTotal.totalAmount)
+
+  const startingData = new Date(start)
+  const endingDate = new Date(end)
+  const differenceInTime = endingDate.getTime() - startingData.getTime()
+  const totalDate = differenceInTime / (1000 * 3600 * 24) + 1
+
 
   // On Click Cancle
   const onClickCancle = () => {
     dispatch(removeSubscription());
-    setStart("");
-    setEnd("");
+    setStart(new Date().toISOString().substring(0, 10));
+    setEnd(new Date().toISOString().substring(0, 10));
   };
+
+  // On Click Apply Subscription
+  const onClickApplySubscription = () => {
+    dispatch(setSubscription({ start: start, end: end }))
+  }
 
   return (
     <div className=" AddSubscription-div ">
@@ -38,7 +44,13 @@ function AddSubscription(props) {
           </p>
         </div>
         <p>
-          Daily: <span>{subsPrice}</span>
+          Total: <span>{totalDate * totalCartPrice}</span>
+        </p>
+        <p>
+          Total Day: <span>{totalDate}</span>
+        </p>
+        <p>
+          Per Day: <span>{totalCartPrice}</span>
         </p>
       </div>
       <div className="AddSubscription-div__right">
@@ -63,7 +75,7 @@ function AddSubscription(props) {
           />
         </div>
         <div className="btnDiv">
-          <button onClick={onClickCalculate}>CALCULATE</button>
+          <button onClick={onClickApplySubscription}>APPLY</button>
           <button onClick={onClickCancle}>CANCLE</button>
         </div>
       </div>
