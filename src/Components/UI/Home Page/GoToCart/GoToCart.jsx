@@ -38,4 +38,4 @@ function GoToCart(props) {
   );
 }
 
-export default GoToCart;
+export default React.memo(GoToCart);

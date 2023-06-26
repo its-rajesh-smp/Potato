@@ -15,7 +15,7 @@ function CartPage(props) {
   const dispatch = useDispatch()
 
   const onClickOrder = () => {
-    // setCartPage(false)
+    setCartPage(false)
     dispatch(createOrder())
   }
 

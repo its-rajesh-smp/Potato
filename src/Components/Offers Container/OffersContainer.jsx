@@ -29,4 +29,4 @@ function OffersContainer(props) {
   );
 }
 
-export default OffersContainer;
+export default React.memo(OffersContainer);
